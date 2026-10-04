@@ -1,0 +1,54 @@
+{
+  "athena-skill": [
+    {"name":"Python / CPython","maintainers":"Python Software Foundation and CPython contributors","use":"Owl CLI runtime","source":"https://github.com/python/cpython","license_url":"https://docs.python.org/3/license.html","evidence":"README.md"},
+    {"name":"Git","maintainers":"Git project contributors","use":"Source versioning and installation","source":"https://github.com/git/git","license_url":"https://github.com/git/git/blob/master/COPYING","evidence":"README.md"}
+  ],
+  "cortege-hackathon": [
+    {"name":"Superpowers","maintainers":"Jesse Vincent (obra) and Superpowers contributors","use":"Included development skills","source":"https://github.com/obra/superpowers","license_url":"https://github.com/obra/superpowers/blob/main/LICENSE","evidence":".claude/skills/superpowers/brainstorming/SKILL.md"},
+    {"name":"Skill Creator","maintainers":"Anthropic skill contributors","use":"Included skill-authoring guidance","source":"https://github.com/anthropics/skills/tree/main/skills/skill-creator","license_url":"https://github.com/anthropics/skills/blob/main/skills/skill-creator/LICENSE.txt","evidence":".claude/skills/skill-creator/SKILL.md"}
+  ],
+  "talk-to-me": [
+    {"name":"Piper TTS","maintainers":"Michael Hansen (rhasspy) and Piper contributors","use":"External speech synthesis CLI; the repository credits the rhasspy implementation","source":"https://github.com/rhasspy/piper","license_url":"https://github.com/rhasspy/piper/blob/master/LICENSE.md","evidence":"THIRD_PARTY_LICENSES.md"},
+    {"name":"Piper voice models","maintainers":"rhasspy and the individual voice/model creators","use":"Downloaded ONNX voice models; each model card supplies its creators and license","source":"https://huggingface.co/rhasspy/piper-voices","license_url":"https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_US/amy/medium","evidence":"setup.sh"},
+    {"name":"Rust and rustup","maintainers":"Rust project contributors","use":"Build toolchain and installer","source":"https://github.com/rust-lang/rust","license_url":"https://github.com/rust-lang/rust/tree/master","evidence":"setup.sh"},
+    {"name":"Homebrew","maintainers":"Homebrew contributors","use":"Dependency installation on macOS","source":"https://github.com/Homebrew/brew","license_url":"https://github.com/Homebrew/brew/blob/master/LICENSE.txt","evidence":"setup.sh"}
+  ],
+  "chatgpt-history-to-markdown": [
+    {"name":"sentence-transformers","maintainers":"UKP Lab and sentence-transformers contributors","use":"Optional local vector embedding backend installed by the vector helper","source":"https://github.com/UKPLab/sentence-transformers","license_url":"https://github.com/UKPLab/sentence-transformers/blob/master/LICENSE","evidence":"run_with_vectors.sh"},
+    {"name":"all-MiniLM-L6-v2","maintainers":"sentence-transformers model contributors","use":"Default embedding model; model-card credits and license apply","source":"https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2","license_url":"https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/main/README.md","evidence":"search_index.py"},
+    {"name":"PlantUML","maintainers":"PlantUML contributors","use":"Diagram rendering through the configured PlantUML server","source":"https://github.com/plantuml/plantuml","license_url":"https://plantuml.com/license","evidence":"web/index.html"}
+  ],
+  "wa-state-ferry-tracker": [
+    {"name":"OpenStreetMap","maintainers":"OpenStreetMap contributors","use":"Underlying map data","source":"https://www.openstreetmap.org","license_url":"https://www.openstreetmap.org/copyright","evidence":"app.js"},
+    {"name":"CARTO","maintainers":"CARTO and its basemap contributors","use":"Map tile styling and delivery","source":"https://github.com/CartoDB/basemap-styles","license_url":"https://github.com/CartoDB/basemap-styles/blob/master/LICENSE.md","evidence":"app.js"},
+    {"name":"WSDOT","maintainers":"Washington State Department of Transportation","use":"Ferry telemetry and terminal information; public data source","source":"https://www.wsdot.wa.gov/traffic/api/","license_url":"https://www.wsdot.wa.gov/traffic/api/","evidence":"index.html"},
+    {"name":"Inter","maintainers":"Rasmus Andersson and Inter contributors","use":"Interface font","source":"https://github.com/rsms/inter","license_url":"https://github.com/rsms/inter/blob/master/LICENSE.txt","evidence":"index.html"},
+    {"name":"Outfit","maintainers":"Smartsheet Inc, Rodrigo Fuenzalida, and Outfit contributors","use":"Interface font","source":"https://github.com/Outfitio/Outfit-Fonts","license_url":"https://github.com/google/fonts/blob/main/ofl/outfit/OFL.txt","evidence":"index.html"}
+  ],
+  "linux-mint-headless-setup": [
+    {"name":"Linux Mint","maintainers":"Linux Mint team and distribution contributors","use":"Operating system in the setup runbooks","source":"https://github.com/linuxmint","license_url":"https://linuxmint.com/","evidence":"README.md"},
+    {"name":"OpenSSH","maintainers":"OpenBSD / OpenSSH contributors","use":"Remote administration","source":"https://github.com/openssh/openssh-portable","license_url":"https://github.com/openssh/openssh-portable/blob/master/LICENCE","evidence":"mint-post-install.sh"},
+    {"name":"Git","maintainers":"Git project contributors","use":"Source versioning","source":"https://github.com/git/git","license_url":"https://github.com/git/git/blob/master/COPYING","evidence":"mint-post-install.sh"},
+    {"name":"curl","maintainers":"Daniel Stenberg and curl contributors","use":"HTTP downloads and checks","source":"https://github.com/curl/curl","license_url":"https://github.com/curl/curl/blob/master/COPYING","evidence":"mint-post-install.sh"},
+    {"name":"GNU Wget","maintainers":"GNU Wget contributors","use":"Downloads","source":"https://git.savannah.gnu.org/cgit/wget.git","license_url":"https://www.gnu.org/software/wget/","evidence":"mint-post-install.sh"},
+    {"name":"htop","maintainers":"htop contributors","use":"Process monitoring","source":"https://github.com/htop-dev/htop","license_url":"https://github.com/htop-dev/htop/blob/main/COPYING","evidence":"mint-post-install.sh"},
+    {"name":"Neofetch","maintainers":"Dylan Araps and Neofetch contributors","use":"System information","source":"https://github.com/dylanaraps/neofetch","license_url":"https://github.com/dylanaraps/neofetch/blob/master/LICENSE.md","evidence":"mint-post-install.sh"},
+    {"name":"Debian build-essential","maintainers":"Debian maintainers and GNU toolchain contributors","use":"Compiler and build-tool package set","source":"https://tracker.debian.org/pkg/build-essential","license_url":"https://sources.debian.org/src/build-essential/","evidence":"mint-post-install.sh"},
+    {"name":"Avahi","maintainers":"Avahi contributors","use":"Local-network host discovery","source":"https://github.com/avahi/avahi","license_url":"https://github.com/avahi/avahi/blob/master/LICENSE","evidence":"mint-post-install.sh"},
+    {"name":"systemd","maintainers":"systemd contributors","use":"Services and power-management configuration","source":"https://github.com/systemd/systemd","license_url":"https://github.com/systemd/systemd/blob/main/LICENSE.LGPL2.1","evidence":"skills/headless-linux-server/references/post-install.md"},
+    {"name":"Moby / Docker Engine","maintainers":"Moby and Docker contributors","use":"Optional container runtime","source":"https://github.com/moby/moby","license_url":"https://github.com/moby/moby/blob/master/LICENSE","evidence":"skills/headless-linux-server/references/post-install.md"},
+    {"name":"Caddy","maintainers":"Caddy contributors","use":"Optional reverse proxy","source":"https://github.com/caddyserver/caddy","license_url":"https://github.com/caddyserver/caddy/blob/master/LICENSE","evidence":"skills/headless-linux-server/references/post-install.md"},
+    {"name":"Samba","maintainers":"Samba Team and contributors","use":"Optional file sharing","source":"https://gitlab.com/samba-team/samba","license_url":"https://www.samba.org/samba/docs/GPL.html","evidence":"skills/headless-linux-server/references/post-install.md"},
+    {"name":"TigerVNC","maintainers":"TigerVNC contributors","use":"Optional remote desktop server","source":"https://github.com/TigerVNC/tigervnc","license_url":"https://github.com/TigerVNC/tigervnc/blob/master/LICENCE.TXT","evidence":"skills/headless-linux-server/references/post-install.md"},
+    {"name":"Xfce","maintainers":"Xfce contributors","use":"Optional remote desktop environment","source":"https://gitlab.xfce.org/xfce","license_url":"https://www.xfce.org/","evidence":"skills/headless-linux-server/references/post-install.md"},
+    {"name":"D-Bus","maintainers":"freedesktop.org D-Bus contributors","use":"Desktop session support","source":"https://gitlab.freedesktop.org/dbus/dbus","license_url":"https://dbus.freedesktop.org/doc/dbus-licensing.html","evidence":"skills/headless-linux-server/references/post-install.md"}
+  ],
+  "taylorparsons.github.io": [
+    {"name":"create-gh-pages-site","maintainers":"Jon Gallant (jongio) and skills contributors","use":"Site scaffold and deployment template selection","source":"https://github.com/jongio/skills/tree/main/skills/create-gh-pages-site","license_url":"https://github.com/jongio/skills/blob/main/LICENSE"},
+    {"name":"GitHub Pages templates","maintainers":"jongio and gh-pages-templates contributors","use":"Original static site and deployment template","source":"https://github.com/jongio/gh-pages-templates","license_url":"https://github.com/jongio/gh-pages-templates"},
+    {"name":"GitHub Actions for Pages","maintainers":"GitHub and actions contributors","use":"Checkout, Pages configuration, artifact upload, and deployment","source":"https://github.com/actions/deploy-pages","license_url":"https://github.com/actions/deploy-pages/blob/main/LICENSE","evidence":".github/workflows/deploy.yml"},
+    {"name":"DM Sans","maintainers":"Colophon Foundry and DM Sans contributors","use":"Body typeface","source":"https://github.com/googlefonts/dm-fonts","license_url":"https://github.com/google/fonts/blob/main/ofl/dmsans/OFL.txt","evidence":"assets/styles.css"},
+    {"name":"Space Grotesk","maintainers":"Florian Karsten and Space Grotesk contributors","use":"Heading typeface","source":"https://github.com/floriankarsten/space-grotesk","license_url":"https://github.com/google/fonts/blob/main/ofl/spacegrotesk/OFL.txt","evidence":"assets/styles.css"},
+    {"name":"Python / CPython","maintainers":"Python Software Foundation and CPython contributors","use":"Static page generator runtime","source":"https://github.com/python/cpython","license_url":"https://docs.python.org/3/license.html","evidence":"scripts/build.py"}
+  ]
+}

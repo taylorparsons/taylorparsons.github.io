@@ -3,3 +3,10 @@ __pycache__/
 *.pyc
 private-repo-release-review.md
 *.zip
+credits-cache/
+credits-checkpoint.json
+data/credits.json
+featured-credits.json
+featured-rust-credits.json
+additional-credits.json
+copyright-credits.json
