@@ -60,10 +60,10 @@ def render_credits(page, projects):
             body += '</tbody></table></div></section>'
         direct = [x for x in dependencies if set(x['scopes']) != {'locked'}]
         locked = [x for x in dependencies if set(x['scopes']) == {'locked'}]
-        def table(items):
+        def table(items, packages=data['packages'], source_blob=source_root + '/blob/' + repo['sha']):
             content = '<div class="credit-table-wrap"><table class="credit-table"><thead><tr><th>Dependency and source</th><th>Maintainers / package owners</th><th>License metadata</th><th>Versions / evidence</th></tr></thead><tbody>'
-            for dep in sorted(items, key=lambda x: x['key'].lower()):
-                meta = data['packages'][dep['key']]
+            for dep in sorted(items, key=lambda dependency: dependency['key'].lower()):
+                meta = packages[dep['key']]
                 names = ', '.join(meta.get('maintainers', []))
                 if not names:
                     names = meta['name'] + ' contributors'
@@ -72,7 +72,7 @@ def render_credits(page, projects):
                 if meta.get('error'):
                     content += '<br><span class="small">' + link(meta['registry'], 'Published maintainer names and license') + '</span>'
                 content += '</td><td>' + E(', '.join(dep['versions'])) + '<br><span class="small">' + E(', '.join(dep['scopes'])) + '</span><details><summary>Dependency evidence</summary><ul>'
-                content += ''.join('<li>' + link(source_root + '/blob/' + repo['sha'] + '/' + path, path) + '</li>' for path in dep['evidence'])
+                content += ''.join('<li>' + link(source_blob + '/' + path, path) + '</li>' for path in dep['evidence'])
                 content += '</ul></details></td></tr>'
             return content + '</tbody></table></div>'
         if direct:
