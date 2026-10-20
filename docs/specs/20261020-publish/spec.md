@@ -1,9 +1,9 @@
 # Feature Spec: 20261020-publish
 
-Status: Active
+Status: Done
 Created: 2026-10-20
 Inputs: CR-20261020-1312
-Decisions: D-20261020-1313
+Decisions: D-20261020-1313, D-20261020-1331
 
 ## Summary
 
@@ -13,8 +13,9 @@ Publish the reviewed security, lint, and workflow changes to protected main.
 
 - FR-008: Publish changes. (Sources: CR-20261020-1312; D-20261020-1313)
   Use a branch and PR merge, preserve prior commits, and ignore Finder metadata.
-- FR-009: Verify release. (Sources: CR-20261020-1312; D-20261020-1313)
+- FR-009: Verify release. (Sources: CR-20261020-1312; D-20261020-1331)
   Confirm remote and local main, Pages completion, and homepage availability.
+  Use Actions publishing and prevent competing legacy root builds.
 
 ## Acceptance
 

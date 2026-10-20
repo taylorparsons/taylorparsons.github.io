@@ -23,14 +23,15 @@ GitHub Actions deploys the generated `site/` directory to GitHub Pages.
 
 ## Backlog
 
-- Active: `20261020-publish`, implementing FR-008 and FR-009.
-  Sources: CR-20261020-1312; D-20261020-1313.
-- Shipped settings/local config: `20261020-git-hardening`, FR-005 through FR-007.
+- Shipped: `20261020-publish`, implementing FR-008 and FR-009.
+  Sources: CR-20261020-1312; D-20261020-1313; D-20261020-1331.
+  Evidence: PR #1 merge df12c6b and Pages run 39492784638; feature notes.
+- Shipped: `20261020-git-hardening`, implementing FR-005 through FR-007.
   Sources: CR-20261020-1242; D-20261020-1242. Evidence: feature session notes and
-  `.github/main-protection.json`. Weekly update configuration pending merge.
-- Shipped locally: `20261020-security-lint`, implementing FR-001 through FR-004.
+  `.github/main-protection.json`. Weekly update configuration merged in PR #1.
+- Shipped: `20261020-security-lint`, implementing FR-001 through FR-004.
   Sources: CR-20261020-1231; D-20261020-1231. Evidence:
-  `tests/test_collect_credits.py` and feature session notes. Pending merge.
+  `tests/test_collect_credits.py` and PR #1 merge df12c6b.
 
 ## Execution plan
 
@@ -58,6 +59,7 @@ GitHub Actions deploys the generated `site/` directory to GitHub Pages.
 - FR-008: Publish changes. (Sources: CR-20261020-1312; D-20261020-1313)
   Push the reviewed changes through a branch and PR into protected main,
   preserving implementation commits. Exclude Finder metadata from versioning.
-- FR-009: Verify release. (Sources: CR-20261020-1312; D-20261020-1313)
+- FR-009: Verify release. (Sources: CR-20261020-1312; D-20261020-1331)
   Confirm remote main, synchronize local main, and check Pages deployment and
-  the published homepage. Record merge and deployment evidence through Owl.
+  the published homepage. Use Actions as the Pages publishing source so legacy
+  root builds do not replace the generated artifact. Record release evidence.
