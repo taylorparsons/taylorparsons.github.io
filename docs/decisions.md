@@ -26,3 +26,12 @@ PRD: Publication
 Decision: Publish the four reviewed local commits through a temporary branch and pull request, then merge into main with a merge commit, fast-forward local main, and verify the Pages deployment. Ignore Finder .DS_Store metadata that appeared as untracked files.
 Rationale: The user explicitly authorized checking in and pushing the changes to remote main. Administrator-enforced branch protection requires a PR. A merge commit preserves the existing ATHENA-linked implementation history without disabling protection. Current remote main remains cf85f006b532c72710a84dbe87585cbfe3708387. Repository settings permit merge commits.
 Alternatives considered: A direct main push would be rejected. Bypassing or weakening protection is unnecessary. Squashing would discard the existing traceable commit chain. Finder metadata is not source material and will be ignored rather than committed.
+
+## D-20261020-1331
+Date: 2026-10-20 13:31
+Inputs: CR-20261020-1312
+PRD: Publication
+
+Decision: Change GitHub Pages build_type from legacy to workflow and redeploy the reviewed artifact through the existing Actions workflow.
+Rationale: Remote main and both Actions deployment jobs succeeded, but repeated public homepage requests returned GitHub HTTP 404. The Pages API reported legacy publishing from main at /, while the renderer writes index.html under site/ and the workflow uploads site/. Root-source publishing cannot serve the generated homepage. The existing README explicitly requires GitHub Actions as the Pages source. A one-setting correction aligns hosting with the reviewed artifact.
+Alternatives considered: Committing generated HTML to the repository root would duplicate build output and bypass the existing design. Moving the source to docs would publish audit records instead of the site. No application code or branch protection changes are needed.

@@ -13,10 +13,7 @@
 
 ## Active Features (Load these during sessions)
 
-### 20261020-publish
-- **Status**: Active
-- **Spec**: docs/specs/20261020-publish/spec.md
-- **Summary**: 
+*No active features currently. All features are archived.*
 
 ---
 
@@ -25,6 +22,11 @@
 ### 20261020-git-hardening
 - **Status**: Done
 - **Spec**: docs/specs/20261020-git-hardening/spec.md
+- **Summary**: 
+
+### 20261020-publish
+- **Status**: Done
+- **Spec**: docs/specs/20261020-publish/spec.md
 - **Summary**: 
 
 ### 20261020-security-lint
@@ -37,16 +39,16 @@
 ## Token Optimization
 
 **Without athena-index.md**:
-- Load all 3 specs = ~1,000 tokens
+- Load all 3 specs = ~1,500 tokens
 
 **With athena-index.md**:
 - Load athena-index.md only = ~1100 tokens
-- Load 1 active specs = ~300 tokens
-- **Total**: ~1400 tokens
-- **Savings**: ~-10% reduction
+- Load 0 active specs = ~0 tokens
+- **Total**: ~1100 tokens
+- **Savings**: ~26% reduction
 
 **Usage Pattern**:
 1. Athena loads athena-index.md first
-2. Identifies active features (currently: 1)
-3. Skips 2 archived features
+2. Identifies active features (currently: 0)
+3. Skips 3 archived features
 4. If user asks about archived feature, load on-demand
