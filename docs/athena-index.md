@@ -19,6 +19,11 @@
 
 ## Archived Features (Skip unless explicitly requested)
 
+### 20261020-git-hardening
+- **Status**: Done
+- **Spec**: docs/specs/20261020-git-hardening/spec.md
+- **Summary**: 
+
 ### 20261020-security-lint
 - **Status**: Done
 - **Spec**: docs/specs/20261020-security-lint/spec.md
@@ -29,16 +34,16 @@
 ## Token Optimization
 
 **Without athena-index.md**:
-- Load all 1 specs = ~500 tokens
+- Load all 2 specs = ~1,000 tokens
 
 **With athena-index.md**:
 - Load athena-index.md only = ~1100 tokens
 - Load 0 active specs = ~0 tokens
 - **Total**: ~1100 tokens
-- **Savings**: ~-120% reduction
+- **Savings**: ~-10% reduction
 
 **Usage Pattern**:
 1. Athena loads athena-index.md first
 2. Identifies active features (currently: 0)
-3. Skips 1 archived features
+3. Skips 2 archived features
 4. If user asks about archived feature, load on-demand

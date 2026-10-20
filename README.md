@@ -14,9 +14,22 @@ Styles and browser interactions are in assets/. Only site/ is deployed.
 
 ## Deployment
 
-Create the public taylorparsons.github.io repository. Push to main and select
-Settings > Pages > Source > GitHub Actions. The workflow uses the official Pages
-actions pinned by the create-gh-pages-site template.
+Select Settings > Pages > Source > GitHub Actions. Merge a pull request into
+main to publish the site. The workflow uses the official Pages actions pinned
+by the create-gh-pages-site template.
+
+## Repository maintenance
+
+The main branch requires pull requests and blocks direct pushes, force pushes,
+and deletion, including for administrators. No review approval is required,
+so the owner can merge their own PRs. The deployment runs after merging and is
+not a required PR status check. The reviewed policy is recorded in
+.github/main-protection.json; editing that file does not apply GitHub settings.
+
+GitHub vulnerability alerts and Dependabot security updates are enabled in the
+repository settings. When .github/dependabot.yml is on the default branch, it
+schedules weekly GitHub Actions and Python dependency updates on Mondays at
+09:00 America/Los_Angeles. Review and merge update PRs to publish their changes.
 
 ## Content scope
 
@@ -71,9 +84,10 @@ queries refresh cached styles and browser scripts after edits.
 
 On GitHub, open scripts/build.py and choose Edit file. Project records near the
 top contain name, pitch, use, requirements, commands, steps, and detail. The
-homepage, use-case, and About text are in the same file. Commit to main to rebuild
-and deploy. Change appearance in assets/styles.css. Edit recognition additions
-in data/credits-extra.json. Do not edit generated site/ HTML.
+homepage, use-case, and About text are in the same file. Propose edits on a branch
+and merge a pull request to rebuild and deploy. Change appearance in
+assets/styles.css. Edit recognition additions in data/credits-extra.json.
+Do not edit generated site/ HTML.
 
 ## Development checks
 
