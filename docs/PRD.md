@@ -23,6 +23,8 @@ GitHub Actions deploys the generated `site/` directory to GitHub Pages.
 
 ## Backlog
 
+- Active: `20261020-publish`, implementing FR-008 and FR-009.
+  Sources: CR-20261020-1312; D-20261020-1313.
 - Shipped settings/local config: `20261020-git-hardening`, FR-005 through FR-007.
   Sources: CR-20261020-1242; D-20261020-1242. Evidence: feature session notes and
   `.github/main-protection.json`. Weekly update configuration pending merge.
@@ -50,3 +52,12 @@ GitHub Actions deploys the generated `site/` directory to GitHub Pages.
 - FR-007: Verify settings. (Sources: CR-20261020-1242; D-20261020-1242)
   Read back applied settings, validate YAML and JSON, and document the PR
   workflow. Keep local configuration activation distinct from live settings.
+
+## Publication
+
+- FR-008: Publish changes. (Sources: CR-20261020-1312; D-20261020-1313)
+  Push the reviewed changes through a branch and PR into protected main,
+  preserving implementation commits. Exclude Finder metadata from versioning.
+- FR-009: Verify release. (Sources: CR-20261020-1312; D-20261020-1313)
+  Confirm remote main, synchronize local main, and check Pages deployment and
+  the published homepage. Record merge and deployment evidence through Owl.

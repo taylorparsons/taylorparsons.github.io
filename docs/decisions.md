@@ -17,3 +17,12 @@ PRD: Git workflow hardening
 Decision: Address the two earlier findings: enable GitHub main-branch protection and Dependabot alerts/security updates, and prepare weekly GitHub Actions and pip version-update configuration locally.
 Rationale: The current GitHub admin API confirms no protection or rulesets and disabled vulnerability alerts and automated fixes. Require pull requests, prohibit force pushes and deletion, and enforce protection for administrators. Set zero required approvals so the owner can merge their own PRs. Do not require status checks that run only after a push to main. Existing local commits stay local because this request does not explicitly ask for a push or PR.
 Alternatives considered: Requiring another person's review would block a solo maintainer. Requiring the existing post-push deployment check would block PR merges. Merely preparing a local settings payload would leave both remote findings open. Adding unrelated hooks, commit conventions, signing, or scanning workflows is outside the earlier findings.
+
+## D-20261020-1313
+Date: 2026-10-20 13:13
+Inputs: CR-20261020-1312
+PRD: Publication
+
+Decision: Publish the four reviewed local commits through a temporary branch and pull request, then merge into main with a merge commit, fast-forward local main, and verify the Pages deployment. Ignore Finder .DS_Store metadata that appeared as untracked files.
+Rationale: The user explicitly authorized checking in and pushing the changes to remote main. Administrator-enforced branch protection requires a PR. A merge commit preserves the existing ATHENA-linked implementation history without disabling protection. Current remote main remains cf85f006b532c72710a84dbe87585cbfe3708387. Repository settings permit merge commits.
+Alternatives considered: A direct main push would be rejected. Bypassing or weakening protection is unnecessary. Squashing would discard the existing traceable commit chain. Finder metadata is not source material and will be ignored rather than committed.
