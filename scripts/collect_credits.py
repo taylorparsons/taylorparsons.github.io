@@ -4,16 +4,42 @@ Usage: python3 scripts/collect_credits.py --inventory data/credits-sources.json
 Registry metadata is attribution evidence, not a claim of legal ownership.
 """
 from __future__ import annotations
-import argparse, ast, concurrent.futures, email.utils, json, re, time, tomllib
-import urllib.request, urllib.error, urllib.parse, xml.etree.ElementTree as ET
+
+import argparse
+import ast
+import concurrent.futures
+import email.utils
+import json
+import re
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
 from pathlib import Path
+
+import tomllib
+from defusedxml import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / 'credits-cache'
 HEADERS = {'User-Agent': 'TaylorParsons-OpenSource-Credits/1.0 (public attribution review)'}
 OFFLINE = False
 
+
+def require_https(url):
+    parsed = urllib.parse.urlsplit(url)
+    if parsed.scheme != 'https' or not parsed.hostname:
+        raise ValueError('Credit sources must use an HTTPS URL with a host')
+
+
+class HTTPSRedirectHandler(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        require_https(newurl)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
 def get(url, as_json=False):
+    require_https(url)
     key = __import__('hashlib').sha256(url.encode()).hexdigest()
     path = CACHE / key
     CACHE.mkdir(exist_ok=True)
@@ -24,7 +50,9 @@ def get(url, as_json=False):
             raise FileNotFoundError('No cached public metadata for this source')
         for attempt in range(3):
             try:
-                with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=25) as response:
+                opener = urllib.request.build_opener(HTTPSRedirectHandler())
+                request = urllib.request.Request(url, headers=HEADERS)
+                with opener.open(request, timeout=25) as response:
                     text = response.read().decode('utf-8')
                 path.write_text(text)
                 break
@@ -95,7 +123,7 @@ def attribution(eco, name):
             search = get('https://search.maven.org/solrsearch/select?' + query, True)
             version = search['response']['docs'][0]['latestVersion']
             pom_url = 'https://repo.maven.apache.org/maven2/' + group.replace('.', '/') + '/' + artifact + '/' + version + '/' + artifact + '-' + version + '.pom'
-            root = ET.fromstring(get(pom_url)); ns = {'m': 'http://maven.apache.org/POM/4.0.0'}
+            root = ET.fromstring(get(pom_url), forbid_dtd=True); ns = {'m': 'http://maven.apache.org/POM/4.0.0'}
             source = root.findtext('m:scm/m:url', namespaces=ns) or root.findtext('m:url', namespaces=ns) or ''
             source = source_url(source)
             owners = [root.findtext('m:organization/m:name', namespaces=ns)] + [x.text for x in root.findall('m:developers/m:developer/m:name', ns)]
@@ -135,7 +163,8 @@ def parse_source(repo, path, text):
             for name, version in d.get(section, {}).items():
                 if str(version).startswith(('workspace:', 'file:', 'link:')): continue
                 if str(version).startswith('npm:'):
-                    alias = version[4:]; match = re.match(r'(@[^/]+/[^@]+|[^@]+)(?:@(.*))?$', alias)
+                    alias = version[4:]
+                    match = re.match(r'(@[^/]+/[^@]+|[^@]+)(?:@(.*))?$', alias)
                     if match: name, version = match[1], match[2] or ''
                 add('npm', name, version, 'development' if section == 'devDependencies' else 'declared')
     elif base == 'package-lock.json':
@@ -196,7 +225,7 @@ def parse_source(repo, path, text):
                 for x in node.value.elts:
                     if isinstance(x, ast.Constant) and isinstance(x.value, str): python_requirement(x.value)
     elif base == 'pom.xml':
-        root = ET.fromstring(text); ns = {'m': 'http://maven.apache.org/POM/4.0.0'}
+        root = ET.fromstring(text, forbid_dtd=True); ns = {'m': 'http://maven.apache.org/POM/4.0.0'}
         for dep in root.findall('.//m:dependency', ns):
             group = dep.findtext('m:groupId', namespaces=ns) or ''; artifact = dep.findtext('m:artifactId', namespaces=ns) or ''
             if '${' not in group + artifact: add('maven', group + ':' + artifact, dep.findtext('m:version', namespaces=ns) or '')

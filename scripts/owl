@@ -1,0 +1,6 @@
+#!/bin/sh
+# Delegate audit-log access to the installed ATHENA skill.
+set -eu
+repo_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+skill_root=${ATHENA_SKILL_DIR:-${CODEX_HOME:-$HOME/.codex}/skills/athena}
+exec python3 "$skill_root/scripts/owl.py" --repo "$repo_root" "$@"

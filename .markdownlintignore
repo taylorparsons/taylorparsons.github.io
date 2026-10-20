@@ -1,0 +1,7 @@
+# Generated site copies and Owl-managed audit records are not authored prose.
+site/**
+docs/requests.md
+docs/decisions.md
+docs/athena-index.md
+docs/audit/**
+docs/specs/*/notes.md
