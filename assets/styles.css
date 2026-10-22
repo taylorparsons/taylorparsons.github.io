@@ -5,3 +5,6 @@
 nav{flex-wrap:wrap}.credits-prose{padding-bottom:50px}.credits-prose section{margin-bottom:44px}.credit-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:5px}.credit-table{width:100%;border-collapse:collapse;min-width:680px;font-size:14px}.credit-table th,.credit-table td{text-align:left;vertical-align:top;padding:16px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.credit-table th{background:var(--dark);color:#e6eede;font-size:12px}.credit-table td:first-child{width:24%}.credit-table td:last-child{width:27%}.credit-table tr:last-child td{border-bottom:0}.credit-table details{font-size:12px;margin-top:8px}.credit-table details ul{padding-left:18px}.locked-credits>summary{cursor:pointer;padding:18px 0;border-top:1px solid var(--line)}.locked-credits>summary h2{display:inline;font-size:27px}summary:focus-visible{outline:3px solid #56893d;outline-offset:5px}
 
 .project-hero h1{overflow-wrap:anywhere}
+
+/* Guide columns shrink to the screen; long code lines scroll inside their block. */
+.article-layout{grid-template-columns:210px minmax(0,1fr)}@media(max-width:850px){.article-layout{grid-template-columns:minmax(0,1fr)}}.credits-prose a{overflow-wrap:anywhere}
