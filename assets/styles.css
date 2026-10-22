@@ -8,3 +8,6 @@ nav{flex-wrap:wrap}.credits-prose{padding-bottom:50px}.credits-prose section{mar
 
 /* Guide columns shrink to the screen; long code lines scroll inside their block. */
 .article-layout{grid-template-columns:210px minmax(0,1fr)}@media(max-width:850px){.article-layout{grid-template-columns:minmax(0,1fr)}}.credits-prose a{overflow-wrap:anywhere}
+
+/* Phone menu: main.js adds .has-menu, so without JavaScript the links stay visible. */
+.menu-toggle{display:none}@media(max-width:600px){.has-menu .menu-toggle{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 11px;border:1px solid var(--line);border-radius:4px;background:transparent}.menu-toggle span{display:block;height:2px;background:var(--ink)}.menu-toggle[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:nth-child(2){opacity:0}.menu-toggle[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.has-menu nav{display:none;flex-basis:100%;flex-direction:column;gap:0;font-size:16px}.has-menu nav.open{display:flex}.has-menu nav a{padding:14px 0;border-top:1px solid var(--line)}}
