@@ -55,7 +55,7 @@ def render_credits(page, projects):
             for item in supplements:
                 body += '<tr><td>' + E(item['name']) + '</td><td data-label="Maintainers / creators">' + E(item['maintainers']) + '</td><td data-label="Use in this project">' + E(item['use']) + '</td><td data-label="Source and notices">' + link(item['source'], 'Source')
                 if item.get('license_url'): body += ' · ' + link(item['license_url'], 'License / notices')
-                if item.get('evidence'): body += '<br>' + link(source_root + '/blob/' + repo['sha'] + '/' + item['evidence'], 'Used here')
+                if item.get('evidence'): body += ' · ' + link(source_root + '/blob/' + repo['sha'] + '/' + item['evidence'], 'Used here')
                 body += '</td></tr>'
             body += '</tbody></table></div></section>'
         direct = [x for x in dependencies if set(x['scopes']) != {'locked'}]
