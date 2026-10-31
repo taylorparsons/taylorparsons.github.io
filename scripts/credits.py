@@ -53,7 +53,7 @@ def render_credits(page, projects):
         if supplements:
             body += '<section><h2>Tools, models, assets, and data</h2><div class="credit-table-wrap"><table class="credit-table"><thead><tr><th>Project</th><th>Maintainers / creators</th><th>Use in this project</th><th>Source and notices</th></tr></thead><tbody>'
             for item in supplements:
-                body += '<tr><td>' + E(item['name']) + '</td><td>' + E(item['maintainers']) + '</td><td>' + E(item['use']) + '</td><td>' + link(item['source'], 'Source')
+                body += '<tr><td>' + E(item['name']) + '</td><td data-label="Maintainers / creators">' + E(item['maintainers']) + '</td><td data-label="Use in this project">' + E(item['use']) + '</td><td data-label="Source and notices">' + link(item['source'], 'Source')
                 if item.get('license_url'): body += ' · ' + link(item['license_url'], 'License / notices')
                 if item.get('evidence'): body += '<br>' + link(source_root + '/blob/' + repo['sha'] + '/' + item['evidence'], 'Used here')
                 body += '</td></tr>'
@@ -67,11 +67,11 @@ def render_credits(page, projects):
                 names = ', '.join(meta.get('maintainers', []))
                 if not names:
                     names = meta['name'] + ' contributors'
-                content += '<tr><td>' + link(meta['source'], meta['name']) + '<br><span class="small">' + E(meta['ecosystem']) + ' · ' + link(meta['registry'], 'Package metadata') + '</span></td><td>' + E(names) + '</td><td>' + E(meta.get('license', 'See upstream license'))
+                content += '<tr><td>' + link(meta['source'], meta['name']) + '<br><span class="small">' + E(meta['ecosystem']) + ' · ' + link(meta['registry'], 'Package metadata') + '</span></td><td data-label="Maintainers">' + E(names) + '</td><td data-label="License">' + E(meta.get('license', 'See upstream license'))
                 if meta.get('metadata_version'): content += '<br><span class="small">Metadata version ' + E(meta['metadata_version']) + '</span>'
                 if meta.get('error'):
                     content += '<br><span class="small">' + link(meta['registry'], 'Published maintainer names and license') + '</span>'
-                content += '</td><td>' + E(', '.join(dep['versions'])) + '<br><span class="small">' + E(', '.join(dep['scopes'])) + '</span><details><summary>Dependency evidence</summary><ul>'
+                content += '</td><td data-label="Versions">' + E(', '.join(dep['versions'])) + '<br><span class="small">' + E(', '.join(dep['scopes'])) + '</span><details><summary>Dependency evidence</summary><ul>'
                 content += ''.join('<li>' + link(source_blob + '/' + path, path) + '</li>' for path in dep['evidence'])
                 content += '</ul></details></td></tr>'
             return content + '</tbody></table></div>'
