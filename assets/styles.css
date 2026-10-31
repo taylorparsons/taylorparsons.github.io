@@ -20,3 +20,4 @@ html{scroll-padding-top:64px}header.compact{position:fixed;top:0;left:0;right:0;
 
 /* Guide images on phones: keep diagrams at a readable width and let them scroll sideways. */
 .phone-hint{display:none}.figure-scroll:focus-visible{outline:3px solid #56893d;outline-offset:5px}@media(max-width:600px){.figure-scroll{overflow-x:auto}.figure-scroll img{width:680px;max-width:none}.phone-hint{display:inline}}
+@media(max-width:600px){.credit-table td[data-label="Source and notices"] br+a::before{content:" · "}}
