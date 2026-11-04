@@ -33,7 +33,7 @@ schedules weekly GitHub Actions and Python dependency updates on Mondays at
 
 ## Content scope
 
-Eight public projects and contributions are documented. The ChatGPT History to
+Nine public projects and contributions are documented. The ChatGPT History to
 Markdown guide covers Taylor's vector-search contribution on the
 feature/hybrid-search branch and credits the original project. Private repository
 reviews and personal data are excluded. Source documentation is linked from every
@@ -47,7 +47,7 @@ repository images. Social card and favicon are SVG graphics.
 ## Upstream recognition
 
 Recognition is linked from every project guide and the main navigation. The
-credits index covers 29 public repositories, including forks whose original
+credits index covers 30 public repositories, including forks whose original
 upstream projects are credited. Direct dependencies, development dependencies,
 and packages in lockfiles have source or registry links. Additional credits cover
 runtime tools, fonts, models, browser libraries, maps, and public data.

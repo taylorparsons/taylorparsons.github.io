@@ -35,3 +35,21 @@ PRD: Publication
 Decision: Change GitHub Pages build_type from legacy to workflow and redeploy the reviewed artifact through the existing Actions workflow.
 Rationale: Remote main and both Actions deployment jobs succeeded, but repeated public homepage requests returned GitHub HTTP 404. The Pages API reported legacy publishing from main at /, while the renderer writes index.html under site/ and the workflow uploads site/. Root-source publishing cannot serve the generated homepage. The existing README explicitly requires GitHub Actions as the Pages source. A one-setting correction aligns hosting with the reviewed artifact.
 Alternatives considered: Committing generated HTML to the repository root would duplicate build output and bypass the existing design. Moving the source to docs would publish audit records instead of the site. No application code or branch protection changes are needed.
+
+## D-20261104-1541
+Date: 2026-11-04 15:41
+Inputs: CR-20261104-1541
+PRD: Project catalog
+
+Decision: Add Selenium MCP as a ninth project entry with its generated project guide and upstream recognition card, following the existing catalog pattern. Describe it as a local MCP browser automation server for Claude and Codex with a compact default tool profile for testing web apps and automating online workflows.
+Rationale: The request says to follow the same pattern as other projects. The public README describes MCP browser control and test generation, plus a 42-tool default profile estimated at about 3.8k tokens.
+Alternatives considered: Add only a homepage link, rejected because the catalog's existing project pattern includes setup details and recognition; claim broader functionality beyond the README, rejected to keep copy evidence-bound.
+
+## D-20261104-1546
+Date: 2026-11-04 15:46
+Inputs: CR-20261104-1541
+PRD: Project catalog additions
+
+Decision: Use the upstream README at commit 80d7e95fa53abccab8733897ee2598892dac3fae for the tool count and context size: 43 core tools at about 3.9k tokens, or 77 tools at about 6.4k tokens with SELENIUM_MCP_TOOLS=all.
+Rationale: The exact current README differs from a cached search result, so the source revision controls the portfolio copy.
+Alternatives considered: Keep the cached 42-tool and 3.8k-token figures, rejected because they are stale for the reviewed source revision.

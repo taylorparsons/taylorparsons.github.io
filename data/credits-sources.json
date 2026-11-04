@@ -1665,6 +1665,24 @@
           "sha": "0cf56123ef74f6261421d7f21935aaa50b9e0139"
         }
       ]
+    },
+    {
+      "name": "selenium-mcp",
+      "repo": "seleniumboot/selenium-mcp",
+      "ref": "master",
+      "fork": false,
+      "license": "MIT",
+      "description": "Local Python MCP server for Selenium browser automation and test generation",
+      "owner": "seleniumboot",
+      "sha": "80d7e95fa53abccab8733897ee2598892dac3fae",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "pyproject.toml",
+          "size": 2449,
+          "sha": "674b8bfa61a60d079e64c3d68ee9a6bfb6c17956"
+        }
+      ]
     }
   ]
 }

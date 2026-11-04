@@ -1,0 +1,1 @@
+[{"repository":"selenium-mcp","dependency":{"key":"pypi:mcp","versions":[">=2.0.0,<3.0.0"],"scopes":["direct"],"evidence":["pyproject.toml"]}},{"repository":"selenium-mcp","dependency":{"key":"pypi:selenium","versions":[">=4.6.0"],"scopes":["direct"],"evidence":["pyproject.toml"]}}]

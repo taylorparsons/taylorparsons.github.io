@@ -140,3 +140,13 @@ are you also able to fix the issus found with $git-workflow-automation
 
 ### Request (verbatim):
 ok check in change on main and push to remote
+
+## CR-20261104-1541
+
+### Metadata
+- **Date:** 2026-11-04 15:41
+- **Source:** chat
+
+### Request (verbatim):
+update my portfolio to include the released open source project to use a a local low memory plugin for claude or codex to test you apps and other online automation.
+https://github.com/taylorparsons/selenium-mcp follow the same pattern as the other project
