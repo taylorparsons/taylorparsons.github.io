@@ -61,7 +61,7 @@ def render_credits(page, projects):
         direct = [x for x in dependencies if set(x['scopes']) != {'locked'}]
         locked = [x for x in dependencies if set(x['scopes']) == {'locked'}]
         def table(items, packages=data['packages'], source_blob=source_root + '/blob/' + repo['sha']):
-            content = '<div class="credit-table-wrap"><table class="credit-table"><thead><tr><th>Dependency and source</th><th>Maintainers / package owners</th><th>License metadata</th><th>Versions / evidence</th></tr></thead><tbody>'
+            content = '<div class="credit-table-wrap"><table class="credit-table"><thead><tr><th>Dependency and source</th><th>Authors / maintainers / package owners</th><th>License metadata</th><th>Versions / evidence</th></tr></thead><tbody>'
             for dep in sorted(items, key=lambda dependency: dependency['key'].lower()):
                 meta = packages[dep['key']]
                 names = ', '.join(meta.get('maintainers', []))
@@ -83,7 +83,7 @@ def render_credits(page, projects):
             body += '<section><h2>Dependency records</h2><p>No external package dependencies were declared in the supported manifests found in this revision. Upstream project and tool credits appear above where applicable.</p></section>'
         if repo['notices']:
             body += '<section><h2>Original licenses and notices</h2><p>Original copyright notices and license terms are preserved in the linked source files.</p><ul>' + ''.join('<li>' + link(source_root + '/blob/' + repo['sha'] + '/' + path, path) + '</li>' for path in repo['notices']) + '</ul></section>'
-        body += '<section><h2>Review sources</h2><p>Reviewed ' + E(repo.get('reviewed', data['reviewed'])) + ' against ' + link(source_revision, repo['ref'] + ' at ' + repo['sha'][:12]) + '. Maintainer names come from package registry records or the upstream source namespace. Copyright holders are named in the original notices. License metadata includes the registry version reviewed; use the license shipped with your installed version.</p>'
+        body += '<section><h2>Review sources</h2><p>Reviewed ' + E(repo.get('reviewed', data['reviewed'])) + ' against ' + link(source_revision, repo['ref'] + ' at ' + repo['sha'][:12]) + '. Author and maintainer names come from package registries or reviewed dependency attribution files. Copyright holders are named in the original notices. License metadata includes the registry version reviewed; use the license shipped with your installed version.</p>'
         if repo['manifests']:
             body += '<details><summary>Manifests and lockfiles reviewed</summary><ul>' + ''.join('<li>' + link(source_root + '/blob/' + repo['sha'] + '/' + path, path) + '</li>' for path in repo['manifests']) + '</ul></details>'
         if repo.get('errors'):

@@ -53,3 +53,12 @@ PRD: Project catalog additions
 Decision: Use the upstream README at commit 80d7e95fa53abccab8733897ee2598892dac3fae for the tool count and context size: 43 core tools at about 3.9k tokens, or 77 tools at about 6.4k tokens with SELENIUM_MCP_TOOLS=all.
 Rationale: The exact current README differs from a cached search result, so the source revision controls the portfolio copy.
 Alternatives considered: Keep the cached 42-tool and 3.8k-token figures, rejected because they are stale for the reviewed source revision.
+
+## D-20261104-1623
+Date: 2026-11-04 16:23
+Inputs: CR-20261104-1622
+PRD: Project catalog additions
+
+Decision: Replace all Selenium MCP portfolio and recognition data with Taylor's Rust repository at https://github.com/taylorparsons/selenium-mcp, reviewed at main commit f07674da48494dad8d06c9cafe23da41c819d8ed. Describe the Rust MCP server, its under-30 MB idle RSS claim, optional Chroma and FFmpeg integrations, Chrome automation, Claude setup, and generic stdio MCP client registration from that revision.
+Rationale: The previous project URL resolved to an unrelated Python implementation. The user confirms their work is the Rust repository at the supplied Taylor Parsons URL.
+Alternatives considered: Retain the Python content because GitHub redirected there, rejected because it is not the user's project; describe Codex-specific configuration, deferred because the Rust README only documents Claude Code CLI and generic stdio MCP client configuration.

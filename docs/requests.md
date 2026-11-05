@@ -150,3 +150,15 @@ ok check in change on main and push to remote
 ### Request (verbatim):
 update my portfolio to include the released open source project to use a a local low memory plugin for claude or codex to test you apps and other online automation.
 https://github.com/taylorparsons/selenium-mcp follow the same pattern as the other project
+
+## CR-20261104-1622
+
+### Metadata
+- **Date:** 2026-11-04 16:22
+- **Source:** chat
+
+### Request (verbatim):
+this is not correct I built it in rust 
+https://github.com/taylorparsons/selenium-mcp
+
+use this as my project not the python version
