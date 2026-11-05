@@ -2,133 +2,6 @@
   "reviewed": "2026-10-04",
   "repositories": [
     {
-      "name": "athena-skill",
-      "repo": "taylorparsons/athena-skill",
-      "ref": "main",
-      "fork": false,
-      "license": "MIT",
-      "description": "Agent-agnostic ATHENA framework for PRD-driven, traceable delivery",
-      "owner": "taylorparsons",
-      "sha": "f71b8fc1ef1f57dfe3c78b7e25861c0da1361965",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 1071,
-          "sha": "58b50a69b50ab9a388e1f514f9f6bb5920eb7825"
-        }
-      ]
-    },
-    {
-      "name": "interview-practice-app",
-      "repo": "taylorparsons/interview-practice-app",
-      "ref": "main",
-      "fork": false,
-      "license": "MIT",
-      "description": "AI-powered interview practice tool with structured question flows and feedback scoring.",
-      "owner": "taylorparsons",
-      "sha": "f5a4e86960258ae2445634a12956a987a7fe1d1b",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 1070,
-          "sha": "c6e4158ed6ad97cf92e31a7536a097939acd7f82"
-        },
-        {
-          "path": "requirements.txt",
-          "size": 404,
-          "sha": "86efc4bec50932513fd861b3ffb9f7911b12cbf0"
-        }
-      ]
-    },
-    {
-      "name": "cortege-hackathon",
-      "repo": "taylorparsons/cortege-hackathon",
-      "ref": "main",
-      "fork": false,
-      "license": "NOASSERTION",
-      "description": null,
-      "owner": "taylorparsons",
-      "sha": "7ae6a5da958ac35dbc8a9d55371797a7ddce9e42",
-      "truncated": false,
-      "paths": [
-        {
-          "path": ".claude/skills/skill-creator/LICENSE.txt",
-          "size": 11357,
-          "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
-        },
-        {
-          "path": ".kiro/skills/skill-creator/LICENSE.txt",
-          "size": 11357,
-          "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
-        },
-        {
-          "path": "LICENSE",
-          "size": 341,
-          "sha": "ca0b25928e5a82a67ba7990c65b6ddcb3d299622"
-        },
-        {
-          "path": "package-lock.json",
-          "size": 183946,
-          "sha": "e03b082136bbbfcf482f931caaf9a3c86f05cfd5"
-        },
-        {
-          "path": "package.json",
-          "size": 1162,
-          "sha": "1728e1aa7805fe0701bfb10a6ca684a877c7dd05"
-        }
-      ]
-    },
-    {
-      "name": "hipporag",
-      "repo": "taylorparsons/hipporag",
-      "ref": "main",
-      "fork": true,
-      "parent": "OSU-NLP-Group/HippoRAG",
-      "license": "MIT",
-      "description": "[NeurIPS'24] HippoRAG is a novel RAG framework inspired by human long-term memory that enables LLMs to continuously integrate knowledge across external documents. RAG + Knowledge Graphs + Personalized PageRank.",
-      "owner": "taylorparsons",
-      "sha": "d437bfb1805278b81e20c82357ed3f7d90f14901",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 1088,
-          "sha": "281b68077e52aa0edc708b0daeeab60d4601c1d1"
-        },
-        {
-          "path": "requirements.txt",
-          "size": 226,
-          "sha": "3fb2b85f96578a0023b8450cb5ff3c52c90f40f4"
-        },
-        {
-          "path": "setup.py",
-          "size": 1099,
-          "sha": "339933307975069271930d1f5cb67f4f6335e65b"
-        }
-      ]
-    },
-    {
-      "name": "PureMac",
-      "repo": "taylorparsons/PureMac",
-      "ref": "main",
-      "fork": true,
-      "parent": "momenbasel/PureMac",
-      "license": "MIT",
-      "description": "Free, open-source macOS cleaner. CleanMyMac alternative with zero telemetry. Native SwiftUI, scheduled auto-cleaning, Xcode/Homebrew/system cache cleanup. MIT licensed.",
-      "owner": "taylorparsons",
-      "sha": "362411cc9de72b76f45c9382ec77b33847271653",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 1077,
-          "sha": "c830c16560aca8c82e870dfa02781fab81ed8bb5"
-        }
-      ]
-    },
-    {
       "name": "Jongio-skills",
       "repo": "taylorparsons/Jongio-skills",
       "ref": "main",
@@ -258,91 +131,421 @@
       ]
     },
     {
-      "name": "whisper.cpp",
-      "repo": "taylorparsons/whisper.cpp",
-      "ref": "master",
+      "name": "PureMac",
+      "repo": "taylorparsons/PureMac",
+      "ref": "main",
       "fork": true,
-      "parent": "ggml-org/whisper.cpp",
+      "parent": "momenbasel/PureMac",
       "license": "MIT",
-      "description": "Port of OpenAI's Whisper model in C/C++",
+      "description": "Free, open-source macOS cleaner. CleanMyMac alternative with zero telemetry. Native SwiftUI, scheduled auto-cleaning, Xcode/Homebrew/system cache cleanup. MIT licensed.",
       "owner": "taylorparsons",
-      "sha": "306c88f4d1286aec1bf96e544632897886af5501",
+      "sha": "362411cc9de72b76f45c9382ec77b33847271653",
       "truncated": false,
       "paths": [
         {
           "path": "LICENSE",
-          "size": 1078,
-          "sha": "e7dca554bcb802f98408383a864404e3aa4eacca"
-        },
+          "size": 1077,
+          "sha": "c830c16560aca8c82e870dfa02781fab81ed8bb5"
+        }
+      ]
+    },
+    {
+      "name": "TinySwallow-ChatUI",
+      "repo": "taylorparsons/TinySwallow-ChatUI",
+      "ref": "main",
+      "fork": true,
+      "parent": "SakanaAI/TinySwallow-ChatUI",
+      "license": "Apache-2.0",
+      "description": "Browser-based chat UI for TinySwallow-1.5B that runs without API calls.",
+      "owner": "taylorparsons",
+      "sha": "700711d22c6a48a5171a48157de9fe785ca12897",
+      "truncated": false,
+      "paths": [
         {
-          "path": "bindings/go/LICENSE",
+          "path": "LICENSE",
+          "size": 11357,
+          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        }
+      ]
+    },
+    {
+      "name": "apple-pim",
+      "repo": "taylorparsons/apple-pim",
+      "ref": "main",
+      "fork": true,
+      "parent": "omarshahine/apple-pim",
+      "license": "MIT",
+      "description": "Native macOS integration for Calendar, Reminders, and Contacts using EventKit and Contacts frameworks",
+      "owner": "taylorparsons",
+      "sha": "4cc7d678f6ecf6651f4c113656cf1e6df6164ec4",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
           "size": 1069,
-          "sha": "a8f0d7b9c9d372376eca572dd226b6dcfeddb43a"
+          "sha": "10ff3e04738d927d2f4b9a8d0f1dc554748f31b5"
         },
         {
-          "path": "bindings/javascript/package.json",
-          "size": 600,
-          "sha": "bdbb6af912bd3fc53a9a342d1004995a75580b24"
+          "path": "evals/package.json",
+          "size": 318,
+          "sha": "2a0f45d19814dd8fdcc80590cd905c63840fee92"
         },
         {
-          "path": "examples/addon.node/package-lock.json",
-          "size": 156784,
-          "sha": "1d1a8cd07209e703ddc71ae976563d636ac38b3f"
+          "path": "mcp-server/package.json",
+          "size": 592,
+          "sha": "1cb1068ee5ae27c9d6d71df4fe5ce39bea05d3fe"
         },
         {
-          "path": "examples/addon.node/package.json",
-          "size": 285,
-          "sha": "50046bf1f56a6418a75732cff54c51d2decdf60d"
+          "path": "openclaw/package.json",
+          "size": 2802,
+          "sha": "cdd3543923f23a3d14e6b2813b28ed55412952b0"
         },
         {
-          "path": "examples/wchess/wchess.wasm/chessboardjs-1.0.0/js/chessboard-1.0.0/LICENSE.md",
-          "size": 1052,
-          "sha": "20b7d615ca6c5773d77e8bda0e46aa2c8fbf0770"
+          "path": "package.json",
+          "size": 320,
+          "sha": "17370ece125a25f41cb881e1847a400fa2c35a4b"
         },
         {
-          "path": "examples/wchess/wchess.wasm/chessboardjs-1.0.0/js/chessboard-1.0.0/package.json",
-          "size": 774,
-          "sha": "bf071a30101c5b34b085533978bc7b1c48cf91b5"
+          "path": "site/package.json",
+          "size": 356,
+          "sha": "c347eb0980019782e5005c69238d36e3140f2256"
         },
         {
-          "path": "models/requirements-coreml.txt",
-          "size": 50,
-          "sha": "a511fce61a00d3b29ce27380ba56086a74660303"
+          "path": "swift/Package.swift",
+          "size": 2690,
+          "sha": "97de3642614501ba38f2e18cb9d5084baf98cb5a"
+        }
+      ]
+    },
+    {
+      "name": "athena-skill",
+      "repo": "taylorparsons/athena-skill",
+      "ref": "main",
+      "fork": false,
+      "license": "MIT",
+      "description": "Agent-agnostic ATHENA framework for PRD-driven, traceable delivery",
+      "owner": "taylorparsons",
+      "sha": "f71b8fc1ef1f57dfe3c78b7e25861c0da1361965",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
+          "size": 1071,
+          "sha": "58b50a69b50ab9a388e1f514f9f6bb5920eb7825"
+        }
+      ]
+    },
+    {
+      "name": "awesome-claude-skills",
+      "repo": "taylorparsons/awesome-claude-skills",
+      "ref": "main",
+      "fork": true,
+      "parent": "BehiSecc/awesome-claude-skills",
+      "description": "A curated list of Claude Skills.",
+      "owner": "taylorparsons",
+      "sha": "988201222ac223677199cd70382559ef7616e6ff",
+      "truncated": false,
+      "paths": []
+    },
+    {
+      "name": "chatgpt-history-to-markdown",
+      "repo": "taylorparsons/chatgpt-history-to-markdown",
+      "ref": "feature/hybrid-search",
+      "fork": true,
+      "parent": "rawpurplesmurf/chatgpt-history-to-markdown",
+      "license": "MIT",
+      "description": "Converts a ChatGPT Data Export to a markdown library",
+      "owner": "taylorparsons",
+      "sha": "2738ebe220c523f1e3220ba4c519d7a99f66ef83",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
+          "size": 1070,
+          "sha": "8de4143f2c259dba8837133c75bacfa8d553ce24"
         },
         {
-          "path": "models/requirements-openvino.txt",
-          "size": 34,
-          "sha": "707fa58ab307ba3aaabd733f9271a174409ce629"
+          "path": "requirements.txt",
+          "size": 96,
+          "sha": "29eb52a81a8b63b77e2635812fcfcf705e373d20"
+        }
+      ],
+      "additional_dependencies": [
+        {
+          "ecosystem": "npm",
+          "name": "github-markdown-css",
+          "version": "5.6.1",
+          "scope": "browser asset",
+          "evidence": "web/index.html"
         },
         {
-          "path": "models/requirements-parakeet.txt",
-          "size": 19,
-          "sha": "5239ae0af5d6bfd41c1be90ce5aab86205dc6d40"
+          "ecosystem": "npm",
+          "name": "highlight.js",
+          "version": "11.9.0",
+          "scope": "browser asset",
+          "evidence": "web/index.html"
         },
         {
-          "path": "tests/earnings21/normalizers/LICENSE",
-          "size": 1279,
-          "sha": "7c8e603b0fcb7160e8942f2bf0e76e7014e1c079"
+          "ecosystem": "npm",
+          "name": "marked",
+          "version": "12.0.2",
+          "scope": "browser asset",
+          "evidence": "web/index.html"
         },
         {
-          "path": "tests/earnings21/requirements.txt",
-          "size": 197,
-          "sha": "0e69d036202914ec23f08957acbc1e8f11fbd282"
+          "ecosystem": "npm",
+          "name": "dompurify",
+          "version": "3.0.6",
+          "scope": "browser asset",
+          "evidence": "web/index.html"
         },
         {
-          "path": "tests/librispeech-parakeet/normalizers/LICENSE",
-          "size": 1279,
-          "sha": "7c8e603b0fcb7160e8942f2bf0e76e7014e1c079"
+          "ecosystem": "npm",
+          "name": "pako",
+          "version": "2.1.0",
+          "scope": "browser asset",
+          "evidence": "web/index.html"
         },
         {
-          "path": "tests/librispeech/normalizers/LICENSE",
-          "size": 1279,
-          "sha": "7c8e603b0fcb7160e8942f2bf0e76e7014e1c079"
+          "ecosystem": "npm",
+          "name": "mermaid",
+          "version": "10.9.1",
+          "scope": "browser asset",
+          "evidence": "web/index.html"
         },
         {
-          "path": "tests/librispeech/requirements.txt",
-          "size": 197,
-          "sha": "0e69d036202914ec23f08957acbc1e8f11fbd282"
+          "ecosystem": "pypi",
+          "name": "sentence-transformers",
+          "version": "",
+          "scope": "optional helper",
+          "evidence": "run_with_vectors.sh"
+        }
+      ]
+    },
+    {
+      "name": "cortege-hackathon",
+      "repo": "taylorparsons/cortege-hackathon",
+      "ref": "main",
+      "fork": false,
+      "license": "NOASSERTION",
+      "description": null,
+      "owner": "taylorparsons",
+      "sha": "7ae6a5da958ac35dbc8a9d55371797a7ddce9e42",
+      "truncated": false,
+      "paths": [
+        {
+          "path": ".claude/skills/skill-creator/LICENSE.txt",
+          "size": 11357,
+          "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+        },
+        {
+          "path": ".kiro/skills/skill-creator/LICENSE.txt",
+          "size": 11357,
+          "sha": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+        },
+        {
+          "path": "LICENSE",
+          "size": 341,
+          "sha": "ca0b25928e5a82a67ba7990c65b6ddcb3d299622"
+        },
+        {
+          "path": "package-lock.json",
+          "size": 183946,
+          "sha": "e03b082136bbbfcf482f931caaf9a3c86f05cfd5"
+        },
+        {
+          "path": "package.json",
+          "size": 1162,
+          "sha": "1728e1aa7805fe0701bfb10a6ca684a877c7dd05"
+        }
+      ]
+    },
+    {
+      "name": "designer-skills",
+      "repo": "taylorparsons/designer-skills",
+      "ref": "main",
+      "fork": true,
+      "parent": "Owl-Listener/designer-skills",
+      "license": "MIT",
+      "description": "Designer Skills Collection: agentic skills, commands, and plugins for design , from research to systems, UI, interaction, and delivery.",
+      "owner": "taylorparsons",
+      "sha": "f6a40ad08518d366dae667e779930cdf6370d4cf",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
+          "size": 1064,
+          "sha": "2f3f2b283f2116cf6927b85262269a1960bbff8a"
+        }
+      ]
+    },
+    {
+      "name": "garudust-agent",
+      "repo": "taylorparsons/garudust-agent",
+      "ref": "main",
+      "fork": true,
+      "parent": "garudust-org/garudust-agent",
+      "license": "MIT",
+      "description": "🦅 Open-source AI agent runtime in Rust , Self-hostable with persistent memory, self-improving skills, MCP support, built-in cron, multi-platform messaging & production gateway.",
+      "owner": "taylorparsons",
+      "sha": "a14e44a4335ed1dfaf29a27116a05d5342d01129",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "Cargo.lock",
+          "size": 180629,
+          "sha": "88e39e01aef5c7dc1d482afc7c73308a1710af4a"
+        },
+        {
+          "path": "Cargo.toml",
+          "size": 3406,
+          "sha": "2432d9698809d6d4563780eda24ba638fd767845"
+        },
+        {
+          "path": "LICENSE",
+          "size": 1078,
+          "sha": "43c347c8786cbfcba8cb04747137f83d8ca6591c"
+        },
+        {
+          "path": "apps/desktop-native/Cargo.lock",
+          "size": 165682,
+          "sha": "349a2249d72b4bf479542be72c91e4d5a463f2e3"
+        },
+        {
+          "path": "apps/desktop-native/Cargo.toml",
+          "size": 1592,
+          "sha": "6bba84a3a16088aa992c4ae79c7330090da373ee"
+        },
+        {
+          "path": "bin/garudust-server/Cargo.toml",
+          "size": 1851,
+          "sha": "ff8bc13cff86553c3c54906350e5d8d8c67dd6ef"
+        },
+        {
+          "path": "bin/garudust/Cargo.toml",
+          "size": 1433,
+          "sha": "3e82dfe193fe54aaa82bec5b4ccf72e96de64a51"
+        },
+        {
+          "path": "crates/garudust-agent/Cargo.toml",
+          "size": 1250,
+          "sha": "7cd6eae0f5dfa4694f58552e22e8745e109aab83"
+        },
+        {
+          "path": "crates/garudust-core/Cargo.toml",
+          "size": 883,
+          "sha": "c9947828c5eb2c248a3d3d0751e5035752974081"
+        },
+        {
+          "path": "crates/garudust-cron/Cargo.toml",
+          "size": 952,
+          "sha": "aea3bfed4c83c9681efca3f3ef9d133ea078037c"
+        },
+        {
+          "path": "crates/garudust-gateway/Cargo.toml",
+          "size": 2253,
+          "sha": "7ca2c99027b4b319b78b7fd7824bbc7646de0800"
+        },
+        {
+          "path": "crates/garudust-memory/Cargo.toml",
+          "size": 856,
+          "sha": "00394349b40c62ef1d14c4fb0718480bb45c7cd5"
+        },
+        {
+          "path": "crates/garudust-platforms/Cargo.toml",
+          "size": 2275,
+          "sha": "1370a3e0a04f1160755cbedaaf30abaacfc24f51"
+        },
+        {
+          "path": "crates/garudust-tools/Cargo.toml",
+          "size": 1502,
+          "sha": "5c378e5ceaae65474d98084a37de0ea5c0dd9604"
+        },
+        {
+          "path": "crates/garudust-transport/Cargo.toml",
+          "size": 934,
+          "sha": "128cecac83b668a8790b6cd3f911811a8a0e225b"
+        },
+        {
+          "path": "web/Cargo.lock",
+          "size": 50559,
+          "sha": "24ceb5b2505d2c5dc2e748a9f37cfc99cd643e17"
+        },
+        {
+          "path": "web/Cargo.toml",
+          "size": 1317,
+          "sha": "e4175aad0bb64c579398236735f9fdd8ec2eebbf"
+        }
+      ]
+    },
+    {
+      "name": "hipporag",
+      "repo": "taylorparsons/hipporag",
+      "ref": "main",
+      "fork": true,
+      "parent": "OSU-NLP-Group/HippoRAG",
+      "license": "MIT",
+      "description": "[NeurIPS'24] HippoRAG is a novel RAG framework inspired by human long-term memory that enables LLMs to continuously integrate knowledge across external documents. RAG + Knowledge Graphs + Personalized PageRank.",
+      "owner": "taylorparsons",
+      "sha": "d437bfb1805278b81e20c82357ed3f7d90f14901",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
+          "size": 1088,
+          "sha": "281b68077e52aa0edc708b0daeeab60d4601c1d1"
+        },
+        {
+          "path": "requirements.txt",
+          "size": 226,
+          "sha": "3fb2b85f96578a0023b8450cb5ff3c52c90f40f4"
+        },
+        {
+          "path": "setup.py",
+          "size": 1099,
+          "sha": "339933307975069271930d1f5cb67f4f6335e65b"
+        }
+      ]
+    },
+    {
+      "name": "interview-practice-app",
+      "repo": "taylorparsons/interview-practice-app",
+      "ref": "main",
+      "fork": false,
+      "license": "MIT",
+      "description": "AI-powered interview practice tool with structured question flows and feedback scoring.",
+      "owner": "taylorparsons",
+      "sha": "f5a4e86960258ae2445634a12956a987a7fe1d1b",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
+          "size": 1070,
+          "sha": "c6e4158ed6ad97cf92e31a7536a097939acd7f82"
+        },
+        {
+          "path": "requirements.txt",
+          "size": 404,
+          "sha": "86efc4bec50932513fd861b3ffb9f7911b12cbf0"
+        }
+      ]
+    },
+    {
+      "name": "job-search-automation",
+      "repo": "taylorparsons/job-search-automation",
+      "ref": "main",
+      "fork": true,
+      "parent": "jennifer-mckinney/job-search-automation",
+      "license": "GPL-3.0",
+      "description": "An automation that inverts the job-search model: scouts fitting roles, tailors materials, routes to the correct ATS, and tracks everything , with a human in the loop for every irreversible action.",
+      "owner": "taylorparsons",
+      "sha": "175ff13317f104022aca3d286b972a994f7a3099",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
+          "size": 35147,
+          "sha": "94a9ed024d3859793618152ea559a168bbcbb5e2"
         }
       ]
     },
@@ -365,127 +568,108 @@
       ]
     },
     {
-      "name": "prompts.chat",
-      "repo": "taylorparsons/prompts.chat",
+      "name": "mesh-os",
+      "repo": "taylorparsons/mesh-os",
       "ref": "main",
       "fork": true,
-      "parent": "f/prompts.chat",
-      "license": "CC0-1.0",
-      "description": "a.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source , self-host for your organization with complete privacy.",
+      "parent": "Props-Labs/mesh-os",
+      "license": "Apache-2.0",
+      "description": "MeshOS - The Memory & Knowledge Engine for Multi-Agent Systems.",
       "owner": "taylorparsons",
-      "sha": "f4c5f83855930e804652154a7ce61d06dcb265ee",
+      "sha": "123b83c88ada078a31c678f8a0195e66ffebd33a",
       "truncated": false,
       "paths": [
         {
           "path": "LICENSE",
-          "size": 7048,
-          "sha": "0e259d42c996742e9e3cba14c677129b2c1b6311"
+          "size": 11348,
+          "sha": "81f3e11b173152907c9baad64fa6226c46b2bc2e"
         },
         {
-          "path": "package-lock.json",
-          "size": 788584,
-          "sha": "77a8eb3064bcb77b816493882dc33adf2416491a"
+          "path": "poetry.lock",
+          "size": 82483,
+          "sha": "a02d8b14698f68b2492128eeeece48333e0362f7"
+        },
+        {
+          "path": "pyproject.toml",
+          "size": 1231,
+          "sha": "e82b0e9a751625ecb66a0be53717067468865df8"
+        },
+        {
+          "path": "setup.py",
+          "size": 1612,
+          "sha": "52e912f4427c97589f92832ee944b883b61f81b6"
+        }
+      ]
+    },
+    {
+      "name": "mlx-audio",
+      "repo": "taylorparsons/mlx-audio",
+      "ref": "main",
+      "fork": true,
+      "parent": "Blaizzy/mlx-audio",
+      "license": "MIT",
+      "description": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon.",
+      "owner": "taylorparsons",
+      "sha": "9349644ccbd62eb10900852228f7b952c566def3",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
+          "size": 1070,
+          "sha": "6b75b6ffc9e028806c038071b6fa278993527776"
+        },
+        {
+          "path": "examples/bible-audiobook/package.json",
+          "size": 360,
+          "sha": "513398ffdec7642f28d6e6eb96e26f87cdb5fdbd"
+        },
+        {
+          "path": "mlx_audio/ui/package.json",
+          "size": 808,
+          "sha": "13d0bb41f680ac9593a5a0406acf975073221df7"
+        },
+        {
+          "path": "pyproject.toml",
+          "size": 2233,
+          "sha": "fec5f03b3743978ab2d2e90b5e72e231db5f382e"
+        },
+        {
+          "path": "uv.lock",
+          "size": 687250,
+          "sha": "e23acac976f6fe32b659f4f115cfcca7b8f473fc"
+        }
+      ]
+    },
+    {
+      "name": "npx-skills",
+      "repo": "taylorparsons/npx-skills",
+      "ref": "main",
+      "fork": true,
+      "parent": "vercel-labs/skills",
+      "description": "The open agent skills tool - npx skills",
+      "owner": "taylorparsons",
+      "sha": "88b9564832a2cdb607a3dc6d8797a11a61b15a08",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "ThirdPartyNoticeText.txt",
+          "size": 9605,
+          "sha": "38afd42a9d459a609cc6b8c7a7f08a7e3945d4ca"
         },
         {
           "path": "package.json",
-          "size": 3965,
-          "sha": "2f654c986d449e290d436bab3f8488c06b601492"
+          "size": 2461,
+          "sha": "7e6a16b4eeb696d1a4422071240aa9bb8c04c8d3"
         },
         {
-          "path": "packages/prompts.chat/package-lock.json",
-          "size": 177159,
-          "sha": "d576d408e5c0cf793e3d87147c8788c8b280a382"
+          "path": "pnpm-lock.yaml",
+          "size": 60743,
+          "sha": "afc9cd59a88266c0015950f10a2d0cae92661486"
         },
         {
-          "path": "packages/prompts.chat/package.json",
-          "size": 2539,
-          "sha": "f4829addfd2685eb6d3f4de6ece2d7e4fa8d386b"
-        },
-        {
-          "path": "packages/raycast-extension/package-lock.json",
-          "size": 133494,
-          "sha": "224b3353b9232a27caf7df1310aae21fd02d2d16"
-        },
-        {
-          "path": "packages/raycast-extension/package.json",
-          "size": 2200,
-          "sha": "a4a8434ddfa5fa858fda1c79deba7c7b1a48bc68"
-        }
-      ]
-    },
-    {
-      "name": "wa-state-ferry-tracker",
-      "repo": "taylorparsons/wa-state-ferry-tracker",
-      "ref": "main",
-      "fork": false,
-      "description": null,
-      "owner": "taylorparsons",
-      "sha": "9b33d5f9acda8a89fb1df1ad52948de96efc59b1",
-      "truncated": false,
-      "paths": [
-        {
-          "path": ".agents/skills/build-agent-frontend/template/requirements.txt",
-          "size": 60,
-          "sha": "b148ae80434d84aa18a7ff10481bd841debbebb5"
-        },
-        {
-          "path": "simple-agent/pyproject.toml",
-          "size": 2177,
-          "sha": "7afc9935956ba39e8c487eb53758cda64804e257"
-        },
-        {
-          "path": "simple-agent/uv.lock",
-          "size": 533964,
-          "sha": "10ab931e3e6683aa7550b8af5561531f5da4cac5"
-        }
-      ],
-      "additional_dependencies": [
-        {
-          "ecosystem": "npm",
-          "name": "leaflet",
-          "version": "1.9.4",
-          "scope": "browser asset",
-          "evidence": "index.html"
-        },
-        {
-          "ecosystem": "npm",
-          "name": "@fortawesome/fontawesome-free",
-          "version": "6.4.0",
-          "scope": "browser asset",
-          "evidence": "index.html"
-        }
-      ]
-    },
-    {
-      "name": "talk-to-me",
-      "repo": "taylorparsons/talk-to-me",
-      "ref": "main",
-      "fork": false,
-      "license": "MIT",
-      "description": null,
-      "owner": "taylorparsons",
-      "sha": "cf7c35ee70ce9c083fc8fea306c3c0c9c579911f",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "Cargo.lock",
-          "size": 116829,
-          "sha": "c1a295264d28826fbd87c68fc2536cda31a4b78b"
-        },
-        {
-          "path": "Cargo.toml",
-          "size": 423,
-          "sha": "871f5a0a08e930d2338709c0c12a64a449a37460"
-        },
-        {
-          "path": "LICENSE",
-          "size": 1071,
-          "sha": "ac9242c35a0a72ca2399c9ff9985ac00533fdf13"
-        },
-        {
-          "path": "THIRD_PARTY_LICENSES.md",
-          "size": 1128,
-          "sha": "d4770a275282e29764a65c18407aa6f4cd42cb35"
+          "path": "scripts/generate-licenses.ts",
+          "size": 5613,
+          "sha": "ba10814603d847960c7e985f4b5a15bb65589ea3"
         }
       ]
     },
@@ -600,6 +784,34 @@
           "path": "python/opendataloader-pdf/uv.lock",
           "size": 679786,
           "sha": "03e59b4fadbcb2a57d83a907edf7ea5529b30f09"
+        }
+      ]
+    },
+    {
+      "name": "pptx_extractor",
+      "repo": "taylorparsons/pptx_extractor",
+      "ref": "main",
+      "fork": false,
+      "license": "MIT",
+      "description": "Extract PPTX → JSON, edit safely, and recreate a styled deck (with SmartArt text support).",
+      "owner": "taylorparsons",
+      "sha": "daa519fa2dcbd9e7d34d6a043b1b3a4eb41003be",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
+          "size": 1071,
+          "sha": "58b50a69b50ab9a388e1f514f9f6bb5920eb7825"
+        },
+        {
+          "path": "requirements-ui.txt",
+          "size": 18,
+          "sha": "db2182f698ff7fba3a513d4e7f26290f6f616dc1"
+        },
+        {
+          "path": "requirements.txt",
+          "size": 20,
+          "sha": "529f7b452d144e1942af2be4b429047c5c67f7dc"
         }
       ]
     },
@@ -753,413 +965,128 @@
       ]
     },
     {
-      "name": "mlx-audio",
-      "repo": "taylorparsons/mlx-audio",
+      "name": "prompts.chat",
+      "repo": "taylorparsons/prompts.chat",
       "ref": "main",
       "fork": true,
-      "parent": "Blaizzy/mlx-audio",
-      "license": "MIT",
-      "description": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon.",
+      "parent": "f/prompts.chat",
+      "license": "CC0-1.0",
+      "description": "a.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source , self-host for your organization with complete privacy.",
       "owner": "taylorparsons",
-      "sha": "9349644ccbd62eb10900852228f7b952c566def3",
+      "sha": "f4c5f83855930e804652154a7ce61d06dcb265ee",
       "truncated": false,
       "paths": [
         {
           "path": "LICENSE",
-          "size": 1070,
-          "sha": "6b75b6ffc9e028806c038071b6fa278993527776"
+          "size": 7048,
+          "sha": "0e259d42c996742e9e3cba14c677129b2c1b6311"
         },
         {
-          "path": "examples/bible-audiobook/package.json",
-          "size": 360,
-          "sha": "513398ffdec7642f28d6e6eb96e26f87cdb5fdbd"
+          "path": "package-lock.json",
+          "size": 788584,
+          "sha": "77a8eb3064bcb77b816493882dc33adf2416491a"
         },
         {
-          "path": "mlx_audio/ui/package.json",
-          "size": 808,
-          "sha": "13d0bb41f680ac9593a5a0406acf975073221df7"
+          "path": "package.json",
+          "size": 3965,
+          "sha": "2f654c986d449e290d436bab3f8488c06b601492"
         },
         {
-          "path": "pyproject.toml",
-          "size": 2233,
-          "sha": "fec5f03b3743978ab2d2e90b5e72e231db5f382e"
+          "path": "packages/prompts.chat/package-lock.json",
+          "size": 177159,
+          "sha": "d576d408e5c0cf793e3d87147c8788c8b280a382"
         },
         {
-          "path": "uv.lock",
-          "size": 687250,
-          "sha": "e23acac976f6fe32b659f4f115cfcca7b8f473fc"
+          "path": "packages/prompts.chat/package.json",
+          "size": 2539,
+          "sha": "f4829addfd2685eb6d3f4de6ece2d7e4fa8d386b"
+        },
+        {
+          "path": "packages/raycast-extension/package-lock.json",
+          "size": 133494,
+          "sha": "224b3353b9232a27caf7df1310aae21fd02d2d16"
+        },
+        {
+          "path": "packages/raycast-extension/package.json",
+          "size": 2200,
+          "sha": "a4a8434ddfa5fa858fda1c79deba7c7b1a48bc68"
         }
       ]
     },
     {
-      "name": "pptx_extractor",
-      "repo": "taylorparsons/pptx_extractor",
-      "ref": "main",
-      "fork": false,
-      "license": "MIT",
-      "description": "Extract PPTX → JSON, edit safely, and recreate a styled deck (with SmartArt text support).",
-      "owner": "taylorparsons",
-      "sha": "daa519fa2dcbd9e7d34d6a043b1b3a4eb41003be",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 1071,
-          "sha": "58b50a69b50ab9a388e1f514f9f6bb5920eb7825"
-        },
-        {
-          "path": "requirements-ui.txt",
-          "size": 18,
-          "sha": "db2182f698ff7fba3a513d4e7f26290f6f616dc1"
-        },
-        {
-          "path": "requirements.txt",
-          "size": 20,
-          "sha": "529f7b452d144e1942af2be4b429047c5c67f7dc"
-        }
-      ]
-    },
-    {
-      "name": "designer-skills",
-      "repo": "taylorparsons/designer-skills",
-      "ref": "main",
+      "name": "rtk",
+      "repo": "taylorparsons/rtk",
+      "ref": "master",
       "fork": true,
-      "parent": "Owl-Listener/designer-skills",
-      "license": "MIT",
-      "description": "Designer Skills Collection: agentic skills, commands, and plugins for design , from research to systems, UI, interaction, and delivery.",
+      "parent": "rtk-ai/rtk",
+      "license": "Apache-2.0",
+      "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
       "owner": "taylorparsons",
-      "sha": "f6a40ad08518d366dae667e779930cdf6370d4cf",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 1064,
-          "sha": "2f3f2b283f2116cf6927b85262269a1960bbff8a"
-        }
-      ]
-    },
-    {
-      "name": "garudust-agent",
-      "repo": "taylorparsons/garudust-agent",
-      "ref": "main",
-      "fork": true,
-      "parent": "garudust-org/garudust-agent",
-      "license": "MIT",
-      "description": "🦅 Open-source AI agent runtime in Rust , Self-hostable with persistent memory, self-improving skills, MCP support, built-in cron, multi-platform messaging & production gateway.",
-      "owner": "taylorparsons",
-      "sha": "a14e44a4335ed1dfaf29a27116a05d5342d01129",
+      "sha": "bacff347b79ebb9fec2602e79b9e79d3048e0fe2",
       "truncated": false,
       "paths": [
         {
           "path": "Cargo.lock",
-          "size": 180629,
-          "sha": "88e39e01aef5c7dc1d482afc7c73308a1710af4a"
+          "size": 48129,
+          "sha": "db5b9cf9e4a6eea141f1176951c3e8a4c89efb2d"
         },
         {
           "path": "Cargo.toml",
-          "size": 3406,
-          "sha": "2432d9698809d6d4563780eda24ba638fd767845"
+          "size": 1598,
+          "sha": "c8bed311b4a16c502ca7efd78d37b5779fdde780"
         },
         {
           "path": "LICENSE",
-          "size": 1078,
-          "sha": "43c347c8786cbfcba8cb04747137f83d8ca6591c"
-        },
-        {
-          "path": "apps/desktop-native/Cargo.lock",
-          "size": 165682,
-          "sha": "349a2249d72b4bf479542be72c91e4d5a463f2e3"
-        },
-        {
-          "path": "apps/desktop-native/Cargo.toml",
-          "size": 1592,
-          "sha": "6bba84a3a16088aa992c4ae79c7330090da373ee"
-        },
-        {
-          "path": "bin/garudust-server/Cargo.toml",
-          "size": 1851,
-          "sha": "ff8bc13cff86553c3c54906350e5d8d8c67dd6ef"
-        },
-        {
-          "path": "bin/garudust/Cargo.toml",
-          "size": 1433,
-          "sha": "3e82dfe193fe54aaa82bec5b4ccf72e96de64a51"
-        },
-        {
-          "path": "crates/garudust-agent/Cargo.toml",
-          "size": 1250,
-          "sha": "7cd6eae0f5dfa4694f58552e22e8745e109aab83"
-        },
-        {
-          "path": "crates/garudust-core/Cargo.toml",
-          "size": 883,
-          "sha": "c9947828c5eb2c248a3d3d0751e5035752974081"
-        },
-        {
-          "path": "crates/garudust-cron/Cargo.toml",
-          "size": 952,
-          "sha": "aea3bfed4c83c9681efca3f3ef9d133ea078037c"
-        },
-        {
-          "path": "crates/garudust-gateway/Cargo.toml",
-          "size": 2253,
-          "sha": "7ca2c99027b4b319b78b7fd7824bbc7646de0800"
-        },
-        {
-          "path": "crates/garudust-memory/Cargo.toml",
-          "size": 856,
-          "sha": "00394349b40c62ef1d14c4fb0718480bb45c7cd5"
-        },
-        {
-          "path": "crates/garudust-platforms/Cargo.toml",
-          "size": 2275,
-          "sha": "1370a3e0a04f1160755cbedaaf30abaacfc24f51"
-        },
-        {
-          "path": "crates/garudust-tools/Cargo.toml",
-          "size": 1502,
-          "sha": "5c378e5ceaae65474d98084a37de0ea5c0dd9604"
-        },
-        {
-          "path": "crates/garudust-transport/Cargo.toml",
-          "size": 934,
-          "sha": "128cecac83b668a8790b6cd3f911811a8a0e225b"
-        },
-        {
-          "path": "web/Cargo.lock",
-          "size": 50559,
-          "sha": "24ceb5b2505d2c5dc2e748a9f37cfc99cd643e17"
-        },
-        {
-          "path": "web/Cargo.toml",
-          "size": 1317,
-          "sha": "e4175aad0bb64c579398236735f9fdd8ec2eebbf"
-        }
-      ]
-    },
-    {
-      "name": "awesome-claude-skills",
-      "repo": "taylorparsons/awesome-claude-skills",
-      "ref": "main",
-      "fork": true,
-      "parent": "BehiSecc/awesome-claude-skills",
-      "description": "A curated list of Claude Skills.",
-      "owner": "taylorparsons",
-      "sha": "988201222ac223677199cd70382559ef7616e6ff",
-      "truncated": false,
-      "paths": []
-    },
-    {
-      "name": "TinySwallow-ChatUI",
-      "repo": "taylorparsons/TinySwallow-ChatUI",
-      "ref": "main",
-      "fork": true,
-      "parent": "SakanaAI/TinySwallow-ChatUI",
-      "license": "Apache-2.0",
-      "description": "Browser-based chat UI for TinySwallow-1.5B that runs without API calls.",
-      "owner": "taylorparsons",
-      "sha": "700711d22c6a48a5171a48157de9fe785ca12897",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 11357,
-          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
-        }
-      ]
-    },
-    {
-      "name": "job-search-automation",
-      "repo": "taylorparsons/job-search-automation",
-      "ref": "main",
-      "fork": true,
-      "parent": "jennifer-mckinney/job-search-automation",
-      "license": "GPL-3.0",
-      "description": "An automation that inverts the job-search model: scouts fitting roles, tailors materials, routes to the correct ATS, and tracks everything , with a human in the loop for every irreversible action.",
-      "owner": "taylorparsons",
-      "sha": "175ff13317f104022aca3d286b972a994f7a3099",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 35147,
-          "sha": "94a9ed024d3859793618152ea559a168bbcbb5e2"
-        }
-      ]
-    },
-    {
-      "name": "chatgpt-history-to-markdown",
-      "repo": "taylorparsons/chatgpt-history-to-markdown",
-      "ref": "feature/hybrid-search",
-      "fork": true,
-      "parent": "rawpurplesmurf/chatgpt-history-to-markdown",
-      "license": "MIT",
-      "description": "Converts a ChatGPT Data Export to a markdown library",
-      "owner": "taylorparsons",
-      "sha": "2738ebe220c523f1e3220ba4c519d7a99f66ef83",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 1070,
-          "sha": "8de4143f2c259dba8837133c75bacfa8d553ce24"
-        },
-        {
-          "path": "requirements.txt",
-          "size": 96,
-          "sha": "29eb52a81a8b63b77e2635812fcfcf705e373d20"
-        }
-      ],
-      "additional_dependencies": [
-        {
-          "ecosystem": "npm",
-          "name": "github-markdown-css",
-          "version": "5.6.1",
-          "scope": "browser asset",
-          "evidence": "web/index.html"
-        },
-        {
-          "ecosystem": "npm",
-          "name": "highlight.js",
-          "version": "11.9.0",
-          "scope": "browser asset",
-          "evidence": "web/index.html"
-        },
-        {
-          "ecosystem": "npm",
-          "name": "marked",
-          "version": "12.0.2",
-          "scope": "browser asset",
-          "evidence": "web/index.html"
-        },
-        {
-          "ecosystem": "npm",
-          "name": "dompurify",
-          "version": "3.0.6",
-          "scope": "browser asset",
-          "evidence": "web/index.html"
-        },
-        {
-          "ecosystem": "npm",
-          "name": "pako",
-          "version": "2.1.0",
-          "scope": "browser asset",
-          "evidence": "web/index.html"
-        },
-        {
-          "ecosystem": "npm",
-          "name": "mermaid",
-          "version": "10.9.1",
-          "scope": "browser asset",
-          "evidence": "web/index.html"
-        },
-        {
-          "ecosystem": "pypi",
-          "name": "sentence-transformers",
-          "version": "",
-          "scope": "optional helper",
-          "evidence": "run_with_vectors.sh"
-        }
-      ]
-    },
-    {
-      "name": "superpowers",
-      "repo": "taylorparsons/superpowers",
-      "ref": "main",
-      "fork": true,
-      "parent": "obra/superpowers",
-      "license": "MIT",
-      "description": "Claude Code superpowers: core skills library",
-      "owner": "taylorparsons",
-      "sha": "6efe32c9e2dd002d0c394e861e0529675d1ab32e",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 1070,
-          "sha": "abf0390320aa14406af7a520b9b0739fdda9bf08"
-        },
-        {
-          "path": "package.json",
-          "size": 116,
-          "sha": "04f22b42784a11b22bf6830d8cb9fae1ae829477"
-        },
-        {
-          "path": "tests/brainstorm-server/package-lock.json",
-          "size": 861,
-          "sha": "383c6ff0f9cd5b75ba5af71b4890853f0994f71a"
-        },
-        {
-          "path": "tests/brainstorm-server/package.json",
-          "size": 161,
-          "sha": "a089f03c71335019a29bce8e53a3bbd095d4778d"
-        }
-      ]
-    },
-    {
-      "name": "apple-pim",
-      "repo": "taylorparsons/apple-pim",
-      "ref": "main",
-      "fork": true,
-      "parent": "omarshahine/apple-pim",
-      "license": "MIT",
-      "description": "Native macOS integration for Calendar, Reminders, and Contacts using EventKit and Contacts frameworks",
-      "owner": "taylorparsons",
-      "sha": "4cc7d678f6ecf6651f4c113656cf1e6df6164ec4",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "LICENSE",
-          "size": 1069,
-          "sha": "10ff3e04738d927d2f4b9a8d0f1dc554748f31b5"
-        },
-        {
-          "path": "evals/package.json",
-          "size": 318,
-          "sha": "2a0f45d19814dd8fdcc80590cd905c63840fee92"
-        },
-        {
-          "path": "mcp-server/package.json",
-          "size": 592,
-          "sha": "1cb1068ee5ae27c9d6d71df4fe5ce39bea05d3fe"
+          "size": 10767,
+          "sha": "0afaf4b97d3650e5485101b899bd6dea11ac813a"
         },
         {
           "path": "openclaw/package.json",
-          "size": 2802,
-          "sha": "cdd3543923f23a3d14e6b2813b28ed55412952b0"
-        },
-        {
-          "path": "package.json",
-          "size": 320,
-          "sha": "17370ece125a25f41cb881e1847a400fa2c35a4b"
-        },
-        {
-          "path": "site/package.json",
-          "size": 356,
-          "sha": "c347eb0980019782e5005c69238d36e3140f2256"
-        },
-        {
-          "path": "swift/Package.swift",
-          "size": 2690,
-          "sha": "97de3642614501ba38f2e18cb9d5084baf98cb5a"
+          "size": 610,
+          "sha": "18d359ff4451674a8c677e426ecc2c1647e4740b"
         }
       ]
     },
     {
-      "name": "taylorparsons.github.io",
-      "repo": "taylorparsons/taylorparsons.github.io",
+      "name": "selenium-mcp",
+      "repo": "taylorparsons/selenium-mcp",
       "ref": "main",
       "fork": false,
-      "license": "MIT",
-      "description": null,
+      "license": "Apache-2.0",
+      "description": "Rust MCP server for low-memory browser testing and automation",
       "owner": "taylorparsons",
-      "sha": "f63645d0a61f18fc27ca9622eba5da0be9f9389d",
+      "sha": "f07674da48494dad8d06c9cafe23da41c819d8ed",
       "truncated": false,
       "paths": [
         {
+          "path": "Cargo.toml",
+          "size": 1598,
+          "sha": "76c2a5ff4bbe18e78529bbe319227c9e2420fbfc"
+        },
+        {
+          "path": "Cargo.lock",
+          "size": 108501,
+          "sha": "d6a32ec10ac0eb2173a939ec781a0127adecdb79"
+        },
+        {
+          "path": "THIRD_PARTY_CREDITS.md",
+          "size": 6275,
+          "sha": "c81007b486273c6b4dafa9dcf688b2388c241809"
+        },
+        {
+          "path": "THIRD_PARTY_RUST.md",
+          "size": 75052,
+          "sha": "7cdc588bbd3d6f4720647714a076fcf73e415f14"
+        },
+        {
           "path": "LICENSE",
-          "size": 1078,
-          "sha": "d54e3231e8a0d0d980fd7185de1c1157e6cbd12f"
+          "size": 11358,
+          "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+        },
+        {
+          "path": "NOTICE",
+          "size": 394,
+          "sha": "fb65a3a78d9488ab7a0b7c84d590429aba3a1ace"
         }
       ]
     },
@@ -1342,103 +1269,219 @@
       ]
     },
     {
-      "name": "mesh-os",
-      "repo": "taylorparsons/mesh-os",
+      "name": "superpowers",
+      "repo": "taylorparsons/superpowers",
       "ref": "main",
       "fork": true,
-      "parent": "Props-Labs/mesh-os",
-      "license": "Apache-2.0",
-      "description": "MeshOS - The Memory & Knowledge Engine for Multi-Agent Systems.",
+      "parent": "obra/superpowers",
+      "license": "MIT",
+      "description": "Claude Code superpowers: core skills library",
       "owner": "taylorparsons",
-      "sha": "123b83c88ada078a31c678f8a0195e66ffebd33a",
+      "sha": "6efe32c9e2dd002d0c394e861e0529675d1ab32e",
       "truncated": false,
       "paths": [
         {
           "path": "LICENSE",
-          "size": 11348,
-          "sha": "81f3e11b173152907c9baad64fa6226c46b2bc2e"
-        },
-        {
-          "path": "poetry.lock",
-          "size": 82483,
-          "sha": "a02d8b14698f68b2492128eeeece48333e0362f7"
-        },
-        {
-          "path": "pyproject.toml",
-          "size": 1231,
-          "sha": "e82b0e9a751625ecb66a0be53717067468865df8"
-        },
-        {
-          "path": "setup.py",
-          "size": 1612,
-          "sha": "52e912f4427c97589f92832ee944b883b61f81b6"
-        }
-      ]
-    },
-    {
-      "name": "npx-skills",
-      "repo": "taylorparsons/npx-skills",
-      "ref": "main",
-      "fork": true,
-      "parent": "vercel-labs/skills",
-      "description": "The open agent skills tool - npx skills",
-      "owner": "taylorparsons",
-      "sha": "88b9564832a2cdb607a3dc6d8797a11a61b15a08",
-      "truncated": false,
-      "paths": [
-        {
-          "path": "ThirdPartyNoticeText.txt",
-          "size": 9605,
-          "sha": "38afd42a9d459a609cc6b8c7a7f08a7e3945d4ca"
+          "size": 1070,
+          "sha": "abf0390320aa14406af7a520b9b0739fdda9bf08"
         },
         {
           "path": "package.json",
-          "size": 2461,
-          "sha": "7e6a16b4eeb696d1a4422071240aa9bb8c04c8d3"
+          "size": 116,
+          "sha": "04f22b42784a11b22bf6830d8cb9fae1ae829477"
         },
         {
-          "path": "pnpm-lock.yaml",
-          "size": 60743,
-          "sha": "afc9cd59a88266c0015950f10a2d0cae92661486"
+          "path": "tests/brainstorm-server/package-lock.json",
+          "size": 861,
+          "sha": "383c6ff0f9cd5b75ba5af71b4890853f0994f71a"
         },
         {
-          "path": "scripts/generate-licenses.ts",
-          "size": 5613,
-          "sha": "ba10814603d847960c7e985f4b5a15bb65589ea3"
+          "path": "tests/brainstorm-server/package.json",
+          "size": 161,
+          "sha": "a089f03c71335019a29bce8e53a3bbd095d4778d"
         }
       ]
     },
     {
-      "name": "rtk",
-      "repo": "taylorparsons/rtk",
-      "ref": "master",
-      "fork": true,
-      "parent": "rtk-ai/rtk",
-      "license": "Apache-2.0",
-      "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+      "name": "talk-to-me",
+      "repo": "taylorparsons/talk-to-me",
+      "ref": "main",
+      "fork": false,
+      "license": "MIT",
+      "description": null,
       "owner": "taylorparsons",
-      "sha": "bacff347b79ebb9fec2602e79b9e79d3048e0fe2",
+      "sha": "cf7c35ee70ce9c083fc8fea306c3c0c9c579911f",
       "truncated": false,
       "paths": [
         {
           "path": "Cargo.lock",
-          "size": 48129,
-          "sha": "db5b9cf9e4a6eea141f1176951c3e8a4c89efb2d"
+          "size": 116829,
+          "sha": "c1a295264d28826fbd87c68fc2536cda31a4b78b"
         },
         {
           "path": "Cargo.toml",
-          "size": 1598,
-          "sha": "c8bed311b4a16c502ca7efd78d37b5779fdde780"
+          "size": 423,
+          "sha": "871f5a0a08e930d2338709c0c12a64a449a37460"
         },
         {
           "path": "LICENSE",
-          "size": 10767,
-          "sha": "0afaf4b97d3650e5485101b899bd6dea11ac813a"
+          "size": 1071,
+          "sha": "ac9242c35a0a72ca2399c9ff9985ac00533fdf13"
         },
         {
-          "path": "openclaw/package.json",
-          "size": 610,
-          "sha": "18d359ff4451674a8c677e426ecc2c1647e4740b"
+          "path": "THIRD_PARTY_LICENSES.md",
+          "size": 1128,
+          "sha": "d4770a275282e29764a65c18407aa6f4cd42cb35"
+        }
+      ]
+    },
+    {
+      "name": "taylorparsons.github.io",
+      "repo": "taylorparsons/taylorparsons.github.io",
+      "ref": "main",
+      "fork": false,
+      "license": "MIT",
+      "description": null,
+      "owner": "taylorparsons",
+      "sha": "f63645d0a61f18fc27ca9622eba5da0be9f9389d",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
+          "size": 1078,
+          "sha": "d54e3231e8a0d0d980fd7185de1c1157e6cbd12f"
+        }
+      ]
+    },
+    {
+      "name": "wa-state-ferry-tracker",
+      "repo": "taylorparsons/wa-state-ferry-tracker",
+      "ref": "main",
+      "fork": false,
+      "description": null,
+      "owner": "taylorparsons",
+      "sha": "9b33d5f9acda8a89fb1df1ad52948de96efc59b1",
+      "truncated": false,
+      "paths": [
+        {
+          "path": ".agents/skills/build-agent-frontend/template/requirements.txt",
+          "size": 60,
+          "sha": "b148ae80434d84aa18a7ff10481bd841debbebb5"
+        },
+        {
+          "path": "simple-agent/pyproject.toml",
+          "size": 2177,
+          "sha": "7afc9935956ba39e8c487eb53758cda64804e257"
+        },
+        {
+          "path": "simple-agent/uv.lock",
+          "size": 533964,
+          "sha": "10ab931e3e6683aa7550b8af5561531f5da4cac5"
+        }
+      ],
+      "additional_dependencies": [
+        {
+          "ecosystem": "npm",
+          "name": "leaflet",
+          "version": "1.9.4",
+          "scope": "browser asset",
+          "evidence": "index.html"
+        },
+        {
+          "ecosystem": "npm",
+          "name": "@fortawesome/fontawesome-free",
+          "version": "6.4.0",
+          "scope": "browser asset",
+          "evidence": "index.html"
+        }
+      ]
+    },
+    {
+      "name": "whisper.cpp",
+      "repo": "taylorparsons/whisper.cpp",
+      "ref": "master",
+      "fork": true,
+      "parent": "ggml-org/whisper.cpp",
+      "license": "MIT",
+      "description": "Port of OpenAI's Whisper model in C/C++",
+      "owner": "taylorparsons",
+      "sha": "306c88f4d1286aec1bf96e544632897886af5501",
+      "truncated": false,
+      "paths": [
+        {
+          "path": "LICENSE",
+          "size": 1078,
+          "sha": "e7dca554bcb802f98408383a864404e3aa4eacca"
+        },
+        {
+          "path": "bindings/go/LICENSE",
+          "size": 1069,
+          "sha": "a8f0d7b9c9d372376eca572dd226b6dcfeddb43a"
+        },
+        {
+          "path": "bindings/javascript/package.json",
+          "size": 600,
+          "sha": "bdbb6af912bd3fc53a9a342d1004995a75580b24"
+        },
+        {
+          "path": "examples/addon.node/package-lock.json",
+          "size": 156784,
+          "sha": "1d1a8cd07209e703ddc71ae976563d636ac38b3f"
+        },
+        {
+          "path": "examples/addon.node/package.json",
+          "size": 285,
+          "sha": "50046bf1f56a6418a75732cff54c51d2decdf60d"
+        },
+        {
+          "path": "examples/wchess/wchess.wasm/chessboardjs-1.0.0/js/chessboard-1.0.0/LICENSE.md",
+          "size": 1052,
+          "sha": "20b7d615ca6c5773d77e8bda0e46aa2c8fbf0770"
+        },
+        {
+          "path": "examples/wchess/wchess.wasm/chessboardjs-1.0.0/js/chessboard-1.0.0/package.json",
+          "size": 774,
+          "sha": "bf071a30101c5b34b085533978bc7b1c48cf91b5"
+        },
+        {
+          "path": "models/requirements-coreml.txt",
+          "size": 50,
+          "sha": "a511fce61a00d3b29ce27380ba56086a74660303"
+        },
+        {
+          "path": "models/requirements-openvino.txt",
+          "size": 34,
+          "sha": "707fa58ab307ba3aaabd733f9271a174409ce629"
+        },
+        {
+          "path": "models/requirements-parakeet.txt",
+          "size": 19,
+          "sha": "5239ae0af5d6bfd41c1be90ce5aab86205dc6d40"
+        },
+        {
+          "path": "tests/earnings21/normalizers/LICENSE",
+          "size": 1279,
+          "sha": "7c8e603b0fcb7160e8942f2bf0e76e7014e1c079"
+        },
+        {
+          "path": "tests/earnings21/requirements.txt",
+          "size": 197,
+          "sha": "0e69d036202914ec23f08957acbc1e8f11fbd282"
+        },
+        {
+          "path": "tests/librispeech-parakeet/normalizers/LICENSE",
+          "size": 1279,
+          "sha": "7c8e603b0fcb7160e8942f2bf0e76e7014e1c079"
+        },
+        {
+          "path": "tests/librispeech/normalizers/LICENSE",
+          "size": 1279,
+          "sha": "7c8e603b0fcb7160e8942f2bf0e76e7014e1c079"
+        },
+        {
+          "path": "tests/librispeech/requirements.txt",
+          "size": 197,
+          "sha": "0e69d036202914ec23f08957acbc1e8f11fbd282"
         }
       ]
     },
