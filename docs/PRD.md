@@ -6,6 +6,13 @@ A generated static catalog documents public projects and upstream recognition.
 Python scripts build the site and collect public dependency attribution.
 GitHub Actions deploys the generated `site/` directory to GitHub Pages.
 
+## Project catalog additions
+
+- FR-010: Document Selenium MCP. (Sources: CR-20261104-1541, CR-20261104-1622; D-20261104-1541, D-20261104-1546, D-20261104-1623)
+  Add the released Selenium MCP project to the catalog with a project guide,
+  use case, Rust setup information, and upstream recognition record. Describe
+  Taylor's local browser testing MCP server and reported low idle memory use.
+
 ## Security and lint remediation
 
 - FR-001: HTTPS fetching. (Sources: CR-20261020-1231; D-20261020-1231)
@@ -23,6 +30,8 @@ GitHub Actions deploys the generated `site/` directory to GitHub Pages.
 
 ## Backlog
 
+- Shipped: `20261104-selenium-mcp`, implementing FR-010 with Taylor's Rust project.
+  Sources: CR-20261104-1541, CR-20261104-1622; D-20261104-1541, D-20261104-1546, D-20261104-1623. Evidence: `scripts/build.py`, `data/credits/overview.json`, and the generated Rust project guide.
 - Shipped: `20261020-publish`, implementing FR-008 and FR-009.
   Sources: CR-20261020-1312; D-20261020-1313; D-20261020-1331.
   Evidence: PR #1 merge df12c6b and Pages run 39492784638; feature notes.
